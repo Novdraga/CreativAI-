@@ -1,0 +1,472 @@
+[
+  {
+    "id": "chatgpt-alternatives",
+    "slug": "chatgpt-alternatives",
+    "incumbent_tool_id": "chatgpt",
+    "title": "Best ChatGPT Alternatives for Content Creators",
+    "description": "Explore specialized AI writing assistants and research engines tailored for creators looking for alternatives to ChatGPT.",
+    "incumbent_strengths": [
+      "Massive multimodal versatility (voice, image, code, search)",
+      "Generous free tier with GPT-4o access",
+      "Fast hook brainstorming and rapid outline generation"
+    ],
+    "leaving_reasons": [
+      "Need more natural, human-sounding narrative prose",
+      "Need citation-backed factual research without hallucinations",
+      "Need strict multi-creator brand voice consistency"
+    ],
+    "candidates": [
+      {
+        "tool_id": "claude",
+        "best_for_reasons": [
+          "Authentic storytelling tone",
+          "200k context memory",
+          "Artifacts side-by-side editing"
+        ],
+        "tradeoffs": [
+          "Lower free-tier message frequency limits",
+          "No built-in live internet search in base chat"
+        ],
+        "pace_scores": {
+          "P": 9,
+          "A": 9.2,
+          "C": 8.5,
+          "E": 9.2
+        }
+      },
+      {
+        "tool_id": "perplexity",
+        "best_for_reasons": [
+          "Clickable source citations",
+          "Zero hallucination fact synthesis",
+          "Focus filters for YouTube & Academic sources"
+        ],
+        "tradeoffs": [
+          "Produces structured research dossiers rather than ready-to-narrate creative scripts"
+        ],
+        "pace_scores": {
+          "P": 9.3,
+          "A": 9.4,
+          "C": 8.6,
+          "E": 9.5
+        }
+      },
+      {
+        "tool_id": "jasper",
+        "best_for_reasons": [
+          "Dedicated Brand Voice memory",
+          "50+ marketing copywriting templates",
+          "SurferSEO integration"
+        ],
+        "tradeoffs": [
+          "Higher monthly subscription ($39–$49/mo)",
+          "No permanent free plan"
+        ],
+        "pace_scores": {
+          "P": 7.2,
+          "A": 8.8,
+          "C": 9,
+          "E": 8.5
+        }
+      }
+    ],
+    "situation_mapping": [
+      {
+        "leaving_reason": "Need more natural, human-sounding narrative prose",
+        "recommended_tool_ids": [
+          "claude"
+        ],
+        "justification": "Claude 3.5 Sonnet generates noticeably more nuanced, authentic sentence flow with minimal AI cliches.",
+        "tradeoff_statement": "You gain richer prose and Artifacts editing, but give up ChatGPT's multimodal voice mode."
+      },
+      {
+        "leaving_reason": "Need citation-backed factual research without hallucinations",
+        "recommended_tool_ids": [
+          "perplexity"
+        ],
+        "justification": "Perplexity indexes the live web with verified source footnotes on every factual sentence.",
+        "tradeoff_statement": "You gain rigorous research accuracy, but must still turn findings into a spoken script."
+      },
+      {
+        "leaving_reason": "Need strict multi-creator brand voice consistency",
+        "recommended_tool_ids": [
+          "jasper"
+        ],
+        "justification": "Jasper Brand Voice locks tone and vocabulary parameters across an entire production team.",
+        "tradeoff_statement": "You gain strict channel brand consistency, but pay a premium ($39/mo vs $0–$20/mo)."
+      }
+    ],
+    "evidence": [
+      "ev-chatgpt-official-001",
+      "ev-claude-official-001",
+      "ev-perplexity-official-001",
+      "ev-jasper-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "elevenlabs-alternatives",
+    "slug": "elevenlabs-alternatives",
+    "incumbent_tool_id": "elevenlabs",
+    "title": "Best ElevenLabs Alternatives for AI Voiceover",
+    "description": "Compare top alternatives to ElevenLabs for creators seeking in-browser video synchronization or multi-voice podcast studios.",
+    "incumbent_strengths": [
+      "Unmatched human vocal realism, breathing, and emotional inflection",
+      "Instant voice cloning and extensive voice community library",
+      "Affordable entry point ($5/mo Starter)"
+    ],
+    "leaving_reasons": [
+      "Need to synchronize voiceover directly with video footage in the browser",
+      "Need multi-speaker podcast dialogue assignment in one workspace",
+      "Need high-volume annual hourly audio packages",
+      "Need original royalty-free background soundtracks and musical intro themes"
+    ],
+    "candidates": [
+      {
+        "tool_id": "murf",
+        "best_for_reasons": [
+          "Integrated video timeline editor",
+          "Emphasis pitch curves",
+          "Explainer and corporate voice presets"
+        ],
+        "tradeoffs": [
+          "Slightly more corporate/formal tone",
+          "Free plan blocks downloads"
+        ],
+        "pace_scores": {
+          "P": 8.2,
+          "A": 9,
+          "C": 9.2,
+          "E": 9
+        }
+      },
+      {
+        "tool_id": "play-ht",
+        "best_for_reasons": [
+          "Multi-voice conversational podcast studio",
+          "800+ voices",
+          "3M characters/yr bulk package"
+        ],
+        "tradeoffs": [
+          "Free tier has one-time character limit and requires attribution"
+        ],
+        "pace_scores": {
+          "P": 8.4,
+          "A": 9.1,
+          "C": 8.7,
+          "E": 8.6
+        }
+      },
+      {
+        "tool_id": "suno",
+        "best_for_reasons": [
+          "Full-length original background music & soundtrack generation",
+          "Audio stem separation for video background mixing",
+          "Custom musical intro and segment themes"
+        ],
+        "tradeoffs": [
+          "Specialized for music generation rather than spoken dialogue voiceover"
+        ],
+        "pace_scores": {
+          "P": 8.8,
+          "A": 9.2,
+          "C": 8.6,
+          "E": 9.4
+        }
+      }
+    ],
+    "situation_mapping": [
+      {
+        "leaving_reason": "Need to synchronize voiceover directly with video footage in the browser",
+        "recommended_tool_ids": [
+          "murf"
+        ],
+        "justification": "Murf features an embedded video player allowing you to sync audio blocks to video cuts without an external NLE.",
+        "tradeoff_statement": "You gain browser-based video alignment, but pay $23/mo vs ElevenLabs' $5/mo Starter tier."
+      },
+      {
+        "leaving_reason": "Need multi-speaker podcast dialogue assignment in one workspace",
+        "recommended_tool_ids": [
+          "play-ht"
+        ],
+        "justification": "Play.ht specializes in multi-character dialogue generation with separate voice assignments per paragraph.",
+        "tradeoff_statement": "You gain seamless multi-speaker workflow, but voice emotional extremes are slightly less dynamic than ElevenLabs."
+      },
+      {
+        "leaving_reason": "Need original royalty-free background soundtracks and musical intro themes",
+        "recommended_tool_ids": [
+          "suno"
+        ],
+        "justification": "Suno AI generates complete full-length musical tracks with stem separation to soundtrack your YouTube videos.",
+        "tradeoff_statement": "You gain original music generation, but spoken voiceover narration requires a dedicated voice tool like ElevenLabs."
+      }
+    ],
+    "evidence": [
+      "ev-elevenlabs-official-001",
+      "ev-murf-official-001",
+      "ev-playht-official-001",
+      "ev-suno-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "runway-alternatives",
+    "slug": "runway-alternatives",
+    "incumbent_tool_id": "runway",
+    "title": "Best Runway Alternatives for AI Video Creation",
+    "description": "Discover alternatives to Runway Gen-3 Alpha for talking-head avatar presenter videos and automated script-to-video assembly.",
+    "incumbent_strengths": [
+      "Top-tier cinematic generative video realism and physics",
+      "Motion Brush and multi-axis camera directing controls",
+      "High visual fidelity for atmospheric scenes"
+    ],
+    "leaving_reasons": [
+      "Need a virtual human presenter / talking head avatar",
+      "Need automated script-to-stock video generation with captions",
+      "Need text-based video editing and audio mastering"
+    ],
+    "candidates": [
+      {
+        "tool_id": "synthesia",
+        "best_for_reasons": [
+          "140+ photorealistic avatars",
+          "120+ languages",
+          "Zero camera/mic setup needed"
+        ],
+        "tradeoffs": [
+          "Cannot generate custom generative landscapes/B-roll",
+          "Avatar body is stationary"
+        ],
+        "pace_scores": {
+          "P": 8.5,
+          "A": 9,
+          "C": 8,
+          "E": 9.4
+        }
+      },
+      {
+        "tool_id": "pictory",
+        "best_for_reasons": [
+          "1-click script-to-video stock matching",
+          "Automatic animated captions",
+          "10M+ licensed stock library"
+        ],
+        "tradeoffs": [
+          "Uses stock footage rather than generative AI physics",
+          "Standard animation transitions"
+        ],
+        "pace_scores": {
+          "P": 8.7,
+          "A": 8.4,
+          "C": 7.8,
+          "E": 9.2
+        }
+      },
+      {
+        "tool_id": "descript",
+        "best_for_reasons": [
+          "Text-based transcript editing",
+          "Studio Sound audio enhancement",
+          "Viral clip extraction"
+        ],
+        "tradeoffs": [
+          "Editor requires learning document-timeline paradigm",
+          "720p watermarked free export"
+        ],
+        "pace_scores": {
+          "P": 9.1,
+          "A": 9.3,
+          "C": 9.4,
+          "E": 8.8
+        }
+      }
+    ],
+    "situation_mapping": [
+      {
+        "leaving_reason": "Need a virtual human presenter / talking head avatar",
+        "recommended_tool_ids": [
+          "synthesia"
+        ],
+        "justification": "Synthesia produces photorealistic human avatars that speak scripts with perfect lip synchronization.",
+        "tradeoff_statement": "You gain an on-screen host without filming, but lose Runway's cinematic atmospheric B-roll."
+      },
+      {
+        "leaving_reason": "Need automated script-to-stock video generation with captions",
+        "recommended_tool_ids": [
+          "pictory"
+        ],
+        "justification": "Pictory converts raw scripts into fully assembled, captioned stock videos in minutes.",
+        "tradeoff_statement": "You gain fast automated volume, but videos rely on real-world stock clips rather than AI generation."
+      },
+      {
+        "leaving_reason": "Need text-based video editing and audio mastering",
+        "recommended_tool_ids": [
+          "descript"
+        ],
+        "justification": "Descript lets you edit footage like editing text, with broadcast-level audio noise removal.",
+        "tradeoff_statement": "You gain precision timeline editing, but need your own footage or recorded video."
+      }
+    ],
+    "evidence": [
+      "ev-runway-official-001",
+      "ev-synthesia-official-001",
+      "ev-pictory-official-001",
+      "ev-descript-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "canva-ai-alternatives",
+    "slug": "canva-ai-alternatives",
+    "incumbent_tool_id": "canva-ai",
+    "title": "Best Canva AI Alternatives for YouTube Visuals",
+    "description": "Explore dedicated generative AI art engines when you need photographic realism and fine art beyond Canva Magic Media.",
+    "incumbent_strengths": [
+      "All-in-one graphic design canvas with text hierarchy and stroke borders",
+      "1-click background removal and YouTube thumbnail sizing (1280x720)",
+      "Generous commercial free tier"
+    ],
+    "leaving_reasons": [
+      "Need photorealistic cinematic artwork and intricate scene details",
+      "Need commercially safe generative artwork with precision Generative Fill"
+    ],
+    "candidates": [
+      {
+        "tool_id": "midjourney",
+        "best_for_reasons": [
+          "State-of-the-art photorealism and lighting",
+          "Style reference consistency (--sref)",
+          "Cinematic aesthetic quality"
+        ],
+        "tradeoffs": [
+          "No permanent free plan ($8–$10/mo)",
+          "Cannot do vector text overlays or layout compositing"
+        ],
+        "pace_scores": {
+          "P": 8.9,
+          "A": 9.8,
+          "C": 8.4,
+          "E": 7.6
+        }
+      },
+      {
+        "tool_id": "adobe-firefly",
+        "best_for_reasons": [
+          "Commercially safe & indemnified dataset",
+          "Precision Generative Fill (expand canvas to 16:9)",
+          "Generative text effects and style matching"
+        ],
+        "tradeoffs": [
+          "Lacks vector graphic canvas for YouTube thumbnail text strokes"
+        ],
+        "pace_scores": {
+          "P": 9.2,
+          "A": 9,
+          "C": 9.1,
+          "E": 9.5
+        }
+      }
+    ],
+    "situation_mapping": [
+      {
+        "leaving_reason": "Need photorealistic cinematic artwork and intricate scene details",
+        "recommended_tool_ids": [
+          "midjourney"
+        ],
+        "justification": "Midjourney v6.1 generates photographic textures and lighting far beyond basic template generators.",
+        "tradeoff_statement": "You gain world-class visual fidelity, but must import the image back into Canva to add titles."
+      },
+      {
+        "leaving_reason": "Need commercially safe generative artwork with precision Generative Fill",
+        "recommended_tool_ids": [
+          "adobe-firefly"
+        ],
+        "justification": "Adobe Firefly is trained on licensed Adobe Stock and public domain assets, eliminating copyright risks, and offers outstanding background expansion.",
+        "tradeoff_statement": "You gain indemnified generative art and inpainting, but typography and final thumbnail layout are still best handled in Canva."
+      }
+    ],
+    "evidence": [
+      "ev-canva-official-001",
+      "ev-midjourney-official-001",
+      "ev-firefly-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "descript-alternatives",
+    "slug": "descript-alternatives",
+    "incumbent_tool_id": "descript",
+    "title": "Best Descript Alternatives for Audio & Video Repurposing",
+    "description": "Compare top alternatives to Descript for video transcription, stock B-roll assembly, and voice synthesis.",
+    "incumbent_strengths": [
+      "Edit audio/video by editing text transcript",
+      "One-click Studio Sound microphone audio cleanup",
+      "Automated viral clip extraction for Shorts"
+    ],
+    "leaving_reasons": [
+      "Need automated script-to-video with cleared stock footage",
+      "Need ultra-realistic synthetic voiceover to replace real voices",
+      "Need browser-only quick captioning"
+    ],
+    "candidates": [
+      {
+        "tool_id": "pictory",
+        "best_for_reasons": [
+          "Automated B-roll matching from text",
+          "10M+ stock clips included",
+          "Fast YouTube Shorts generation"
+        ],
+        "tradeoffs": [
+          "Less granular audio editing capabilities than Descript"
+        ],
+        "pace_scores": {
+          "P": 8.7,
+          "A": 8.4,
+          "C": 7.8,
+          "E": 9.2
+        }
+      },
+      {
+        "tool_id": "elevenlabs",
+        "best_for_reasons": [
+          "Industry-leading voice emotional depth",
+          "Instant voice cloning",
+          "Multilingual dubbing"
+        ],
+        "tradeoffs": [
+          "Voice generator only (no video editing timeline)"
+        ],
+        "pace_scores": {
+          "P": 8,
+          "A": 9.8,
+          "C": 8.8,
+          "E": 9
+        }
+      }
+    ],
+    "situation_mapping": [
+      {
+        "leaving_reason": "Need automated script-to-video with cleared stock footage",
+        "recommended_tool_ids": [
+          "pictory"
+        ],
+        "justification": "Pictory handles visual asset selection automatically from a huge stock library.",
+        "tradeoff_statement": "You gain fast automated video assembly, but lose Descript's deep multitrack audio cleanup."
+      },
+      {
+        "leaving_reason": "Need ultra-realistic synthetic voiceover to replace real voices",
+        "recommended_tool_ids": [
+          "elevenlabs"
+        ],
+        "justification": "ElevenLabs provides superior vocal cadence and emotional inflection compared to basic TTS engines.",
+        "tradeoff_statement": "You gain broadcast-level voiceacting, but must edit the final video in a separate tool."
+      }
+    ],
+    "evidence": [
+      "ev-descript-official-001",
+      "ev-pictory-official-001",
+      "ev-elevenlabs-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  }
+]

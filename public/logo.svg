@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-labelledby="title">
+<title>CreativAI — C AI</title>
+<defs>
+  <linearGradient id="gold" x1="82" y1="55" x2="410" y2="455" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#FFF7C2"/>
+    <stop offset=".22" stop-color="#F6C45E"/>
+    <stop offset=".48" stop-color="#B07A1A"/>
+    <stop offset=".72" stop-color="#F3C24A"/>
+    <stop offset="1" stop-color="#FFF0B8"/>
+  </linearGradient>
+  <linearGradient id="steel" x1="130" y1="100" x2="370" y2="410" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#3A445C"/>
+    <stop offset=".52" stop-color="#0F1422"/>
+    <stop offset="1" stop-color="#1E2638"/>
+  </linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+    <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity=".55"/>
+  </filter>
+</defs>
+
+<g filter="url(#shadow)">
+  <!-- Outer hexagon — clean -->
+  <path d="M256 38 432 140v232L256 474 80 372V140Z" fill="#080B13" stroke="url(#gold)" stroke-width="11" stroke-linejoin="round"/>
+  <!-- Inner subtle border — no neon, just steel gray -->
+  <path d="M256 68 405 154v204L256 444 107 358V154Z" stroke="#2B3448" stroke-width="4.5" stroke-linejoin="round" opacity="0.95"/>
+
+  <!-- C — clear, symmetric -->
+  <path d="M337 145 C310 118 277 104 238 104 C159 104 109 168 109 256 C109 344 159 408 238 408 C277 408 310 394 337 367 L302 332 C284 350 264 360 239 360 C192 360 164 318 164 256 C164 194 192 152 239 152 C264 152 284 162 302 180Z"
+        fill="url(#gold)" stroke="#FFF6CC" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- AI — clear, no neon, high contrast -->
+  <path d="M278 164 322 348H280L271 310H230L221 348H181L225 164H278ZM251 274 238 220 225 274Z"
+        fill="url(#steel)" stroke="#8A93AD" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M299 164H337V348H299Z" fill="url(#steel)" stroke="#8A93AD" stroke-width="2.8" stroke-linejoin="round"/>
+</g>
+</svg>

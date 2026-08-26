@@ -1,0 +1,74 @@
+[
+  {
+    "id": "clk-1787687856258-6tow8",
+    "timestamp": "2026-08-25T19:57:36.258Z",
+    "toolId": "elevenlabs",
+    "affiliateUrl": "https://elevenlabs.io/?from=creativai",
+    "referrer": "/tools/elevenlabs",
+    "userAgent": "CreativAI-QA-Runner/1.0"
+  },
+  {
+    "id": "clk-1787700428361-emwgd",
+    "timestamp": "2026-08-25T23:27:08.361Z",
+    "toolId": "chatgpt",
+    "affiliateUrl": "https://chatgpt.com",
+    "referrer": "tool_page",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "clk-1787700442304-3hbe0",
+    "timestamp": "2026-08-25T23:27:22.304Z",
+    "toolId": "canva-ai",
+    "affiliateUrl": "https://partner.canva.com/creativai",
+    "referrer": "tool_page",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "clk-1787781654521-g7lqg",
+    "timestamp": "2026-08-26T22:00:54.521Z",
+    "toolId": "decision-session:faceless-youtube",
+    "affiliateUrl": "stack-result:claude,elevenlabs,premiere-pro,midjourney",
+    "referrer": "/stack/result?goal=faceless-youtube&budget=50&experience=beginner&requirement=quality",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "clk-1787781654523-nmhze",
+    "timestamp": "2026-08-26T22:00:54.523Z",
+    "toolId": "decision-session:faceless-youtube",
+    "affiliateUrl": "stack-result:claude,elevenlabs,premiere-pro,midjourney",
+    "referrer": "/stack/result?goal=faceless-youtube&budget=50&experience=beginner&requirement=quality",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "clk-1787783148406-p3yyx",
+    "timestamp": "2026-08-26T22:25:48.406Z",
+    "toolId": "decision-session:longform",
+    "affiliateUrl": "stack-result:perplexity,claude,elevenlabs,premiere-pro,adobe-firefly",
+    "referrer": "/stack",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "clk-1787783173744-h2mtv",
+    "timestamp": "2026-08-26T22:26:13.744Z",
+    "toolId": "elevenlabs",
+    "affiliateUrl": "https://elevenlabs.io/?from=creativai",
+    "referrer": "tool_page",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "clk-1787783179678-v0eds",
+    "timestamp": "2026-08-26T22:26:19.678Z",
+    "toolId": "elevenlabs",
+    "affiliateUrl": "https://elevenlabs.io/?from=creativai",
+    "referrer": "tool_page",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "clk-1787783744194-t6lpv",
+    "timestamp": "2026-08-26T22:35:44.194Z",
+    "toolId": "elevenlabs",
+    "affiliateUrl": "https://elevenlabs.io",
+    "referrer": "test_suite",
+    "userAgent": "unknown"
+  }
+]

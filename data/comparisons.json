@@ -1,0 +1,515 @@
+[
+  {
+    "id": "chatgpt-vs-claude",
+    "slug": "chatgpt-vs-claude",
+    "title": "ChatGPT vs Claude for YouTube Scriptwriting",
+    "tool_a_id": "chatgpt",
+    "tool_b_id": "claude",
+    "who_should_choose_a": "Creators who want an all-in-one assistant for rapid video brainstorming, hook variations, web-connected topic research, and versatile multimodal tasks at zero to low cost.",
+    "who_should_choose_b": "Creators who prioritize superior natural prose, nuanced conversational tone, long-form narrative coherence (up to 200k context), and structured script formatting using Artifacts.",
+    "dimensions": [
+      {
+        "dimension": "Price & Free Tier",
+        "value_a": "Free tier with dynamic GPT-4o limits; Plus is $20/month; Pro is $200/month.",
+        "value_b": "Free tier with daily volume caps; Pro is $20/month ($17/month billed annually).",
+        "winner": "neutral",
+        "evidence_ref": "ev-chatgpt-official-001"
+      },
+      {
+        "dimension": "True Cost per 1,000-word Script",
+        "value_a": "$0.00 on Free; ~$0.05 on Plus (based on ~400 script iterations/month).",
+        "value_b": "$0.00 on Free; ~$0.07 on Pro (based on ~300 script iterations/month).",
+        "winner": "tool_a",
+        "evidence_ref": "ev-chatgpt-official-001"
+      },
+      {
+        "dimension": "Prose Quality & Natural Tone",
+        "value_a": "Solid structured outlines; can default to generic or formulaic phrasing without custom system prompts.",
+        "value_b": "Outstanding narrative flow, natural vocabulary, varied sentence structures, minimal robotic AI markers.",
+        "winner": "tool_b",
+        "evidence_ref": "ev-claude-official-001"
+      },
+      {
+        "dimension": "Ease of Use",
+        "value_a": "Clean single-column chat interface, simple mobile app, instant onboarding.",
+        "value_b": "Clean modern chat with intuitive side-by-side Artifacts panel for script editing.",
+        "winner": "neutral",
+        "evidence_ref": "ev-claude-official-001"
+      },
+      {
+        "dimension": "Control & Script Structuring",
+        "value_a": "Custom GPTs and Custom Instructions allow saved formatting personas.",
+        "value_b": "Artifacts allow live side-by-side editing; Projects feature stores style guides and channel background.",
+        "winner": "tool_b",
+        "evidence_ref": "ev-claude-official-001"
+      },
+      {
+        "dimension": "Commercial Use Rights",
+        "value_a": "Permitted across Free and Paid tiers; user owns outputs per OpenAI terms.",
+        "value_b": "Permitted across Free and Paid tiers; user owns outputs per Anthropic terms.",
+        "winner": "neutral",
+        "evidence_ref": "ev-chatgpt-official-001"
+      },
+      {
+        "dimension": "Workflow Compatibility",
+        "value_a": "Integrates smoothly into research, hooks, and multi-step prompt pipelines.",
+        "value_b": "Artifacts easily copy/paste into teleprompters, ElevenLabs, or Notion script banks.",
+        "winner": "neutral",
+        "evidence_ref": "ev-claude-official-001"
+      }
+    ],
+    "pace_comparison": {
+      "tool_a": {
+        "P": 9.5,
+        "A": 8.5,
+        "C": 8,
+        "E": 9.5
+      },
+      "tool_b": {
+        "P": 9,
+        "A": 9.2,
+        "C": 8.5,
+        "E": 9.2
+      }
+    },
+    "verdict": {
+      "recommendation": "tool_b",
+      "summary": "For dedicated YouTube scriptwriting, Claude is recommended as the primary choice due to its noticeably superior natural prose, authentic pacing, and side-by-side Artifacts workspace. However, ChatGPT remains an exceptional alternative for creators needing integrated web research and fast hook ideation.",
+      "reasoning": [
+        "Claude produces dialogue and narration that sounds far more human-written with less repetitive phrasing.",
+        "Artifacts provide a dedicated live script document alongside the chat, streamlining revisions.",
+        "ChatGPT is better suited if your workflow depends on real-time web browsing or custom GPT bots.",
+        "Both tools have identical pricing ($20/mo) and full commercial rights, making quality the decisive factor."
+      ],
+      "conditions": "Choose Claude if narrative voice and tone are paramount; choose ChatGPT if you want an all-in-one assistant with web search and code/data tools."
+    },
+    "evidence": [
+      "ev-chatgpt-official-001",
+      "ev-claude-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "elevenlabs-vs-murf",
+    "slug": "elevenlabs-vs-murf",
+    "title": "ElevenLabs vs Murf.ai for Video Voiceovers",
+    "tool_a_id": "elevenlabs",
+    "tool_b_id": "murf",
+    "who_should_choose_a": "Creators seeking the highest possible emotional voice realism, natural breath cadences, conversational nuance, and instant voice cloning.",
+    "who_should_choose_b": "Creators producing explainer, corporate, or tutorial videos who want to sync voice clips directly against video footage on a timeline in the browser.",
+    "dimensions": [
+      {
+        "dimension": "Voice Realism & Emotion",
+        "value_a": "Benchmark leader in human-like timbre, expressive range, whispers, shouting, and natural breath intakes.",
+        "value_b": "Clean, polished studio narration; slightly more corporate and less emotionally dynamic than ElevenLabs.",
+        "winner": "tool_a",
+        "evidence_ref": "ev-elevenlabs-official-001"
+      },
+      {
+        "dimension": "Video Sync & Timeline Editor",
+        "value_a": "Text-box generator with audio download; requires external video editor to align with visuals.",
+        "value_b": "Integrated video player with drag-and-drop block alignment to sync speech to specific on-screen moments.",
+        "winner": "tool_b",
+        "evidence_ref": "ev-murf-official-001"
+      },
+      {
+        "dimension": "Entry Price & Commercial License",
+        "value_a": "Starter plan at $5/mo ($0.17/min) unlocks full commercial rights without attribution.",
+        "value_b": "Creator plan at $23/mo ($0.016/min) unlocks commercial license and unlimited downloads.",
+        "winner": "tool_a",
+        "evidence_ref": "ev-elevenlabs-official-001"
+      },
+      {
+        "dimension": "Free Plan Utility",
+        "value_a": "10,000 characters/mo with downloadable MP3s (non-commercial with mandatory attribution).",
+        "value_b": "10 minutes of preview generation but NO file downloads (strictly in-browser evaluation).",
+        "winner": "tool_a",
+        "evidence_ref": "ev-elevenlabs-official-001"
+      }
+    ],
+    "pace_comparison": {
+      "tool_a": {
+        "P": 8,
+        "A": 9.8,
+        "C": 8.8,
+        "E": 9
+      },
+      "tool_b": {
+        "P": 8.2,
+        "A": 9,
+        "C": 9.2,
+        "E": 9
+      }
+    },
+    "verdict": {
+      "recommendation": "tool_a",
+      "summary": "ElevenLabs is our top recommendation for YouTube and podcast creators due to its unmatched human-level voice quality and lower entry cost ($5/mo vs $23/mo). Murf.ai is the better option for creators who want an all-in-one voice-and-video timing sync studio inside their browser.",
+      "reasoning": [
+        "ElevenLabs achieves a degree of vocal nuance and realism that leaves audience unaware of AI involvement.",
+        "ElevenLabs Starter ($5/mo) is the most budget-accessible commercial voiceover tier on the market.",
+        "Murf provides superior visual block synchronization for creators building corporate training videos."
+      ],
+      "conditions": "Choose ElevenLabs for YouTube entertainment and storytelling; choose Murf for corporate training, e-learning, and slide explainer videos."
+    },
+    "evidence": [
+      "ev-elevenlabs-official-001",
+      "ev-murf-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "runway-vs-synthesia",
+    "slug": "runway-vs-synthesia",
+    "title": "Runway vs Synthesia for AI Video Creation",
+    "tool_a_id": "runway",
+    "tool_b_id": "synthesia",
+    "who_should_choose_a": "Creators who need cinematic generative B-roll, atmospheric landscapes, fluid physics, and sci-fi/fantasy scene cutaways.",
+    "who_should_choose_b": "Creators building 'talking head' educational or news channels who want photorealistic AI presenter avatars without filming themselves.",
+    "dimensions": [
+      {
+        "dimension": "Video Generation Paradigm",
+        "value_a": "Generative text-to-video / image-to-video creating dynamic cinematic world scenes (Gen-3 Alpha).",
+        "value_b": "Presenter avatar video generation syncing AI human hosts with spoken slide presentations.",
+        "winner": "neutral",
+        "evidence_ref": "ev-runway-official-001"
+      },
+      {
+        "dimension": "Cinematic Visual Realism",
+        "value_a": "Photorealistic lighting, volumetric mist, fluid camera pans, and motion brush trajectory controls.",
+        "value_b": "Avatar face lip-sync is photorealistic, but body remains static behind presentation canvas.",
+        "winner": "tool_a",
+        "evidence_ref": "ev-runway-official-001"
+      },
+      {
+        "dimension": "Ease of Production",
+        "value_a": "Requires prompt experimentation and credit management (~50 credits per 5s clip).",
+        "value_b": "Type script, choose avatar, select background template, render in 1 click.",
+        "winner": "tool_b",
+        "evidence_ref": "ev-synthesia-official-001"
+      },
+      {
+        "dimension": "Starting Commercial Price",
+        "value_a": "Standard tier ($12/mo annual / $15/mo monthly) provides 625 credits with watermark removal.",
+        "value_b": "Starter tier ($18/mo annual / $29/mo monthly) provides 120 video minutes/year with watermark removal.",
+        "winner": "tool_a",
+        "evidence_ref": "ev-runway-official-001"
+      }
+    ],
+    "pace_comparison": {
+      "tool_a": {
+        "P": 7.5,
+        "A": 9.2,
+        "C": 8.8,
+        "E": 7.8
+      },
+      "tool_b": {
+        "P": 8.5,
+        "A": 9,
+        "C": 8,
+        "E": 9.4
+      }
+    },
+    "verdict": {
+      "recommendation": "tool_a",
+      "summary": "Runway Gen-3 Alpha is recommended for faceless creators who need evocative B-roll and cinematic scene cutaways. Synthesia is the superior choice if your content model requires a human presenter or course instructor on screen.",
+      "reasoning": [
+        "Runway generates true visual motion and cinematic atmosphere that enhances documentary storytelling.",
+        "Synthesia solves the talking-head presenter problem without cameras, but cannot produce dynamic scene B-roll.",
+        "Combining both (Synthesia host + Runway B-roll) produces broadcast-quality full videos."
+      ],
+      "conditions": "Choose Runway for documentary B-roll; choose Synthesia for presenter-led explainers and online courses."
+    },
+    "evidence": [
+      "ev-runway-official-001",
+      "ev-synthesia-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "chatgpt-vs-jasper",
+    "slug": "chatgpt-vs-jasper",
+    "title": "ChatGPT vs Jasper for Marketing & Video Scripts",
+    "tool_a_id": "chatgpt",
+    "tool_b_id": "jasper",
+    "who_should_choose_a": "Solo creators and generalists who want maximum flexibility, broad knowledge, and zero upfront cost via the free plan.",
+    "who_should_choose_b": "Commercial brand channels, agencies, and marketing teams needing strict brand voice consistency, SEO integration, and structured conversion frameworks.",
+    "dimensions": [
+      {
+        "dimension": "Pricing & Entry Cost",
+        "value_a": "Free plan available; Plus is $20/month with unlimited standard GPT-4o usage.",
+        "value_b": "No permanent free plan; Creator tier starts at $39/mo (annual) or $49/mo (monthly).",
+        "winner": "tool_a",
+        "evidence_ref": "ev-chatgpt-official-001"
+      },
+      {
+        "dimension": "Brand Voice & Tone Memory",
+        "value_a": "Custom Instructions and memory are basic; requires repetitive prompting for tone matching.",
+        "value_b": "Dedicated Brand Voice memory analyzes your existing videos and enforces strict tone guidelines across all generations.",
+        "winner": "tool_b",
+        "evidence_ref": "ev-jasper-official-001"
+      },
+      {
+        "dimension": "Retention & Copywriting Frameworks",
+        "value_a": "General conversational outputs; requires prompt engineering for specific hook formulas.",
+        "value_b": "50+ pre-built marketing templates (AIDA, PAS, Hook Generators) built into the interface.",
+        "winner": "tool_b",
+        "evidence_ref": "ev-jasper-official-001"
+      },
+      {
+        "dimension": "Versatility & Multimodal Capabilities",
+        "value_a": "Voice mode, DALL-E image generation, code interpreter, web search, document uploads.",
+        "value_b": "Focused exclusively on marketing copy and text campaign workflows.",
+        "winner": "tool_a",
+        "evidence_ref": "ev-chatgpt-official-001"
+      }
+    ],
+    "pace_comparison": {
+      "tool_a": {
+        "P": 9.5,
+        "A": 8.5,
+        "C": 8,
+        "E": 9.5
+      },
+      "tool_b": {
+        "P": 7.2,
+        "A": 8.8,
+        "C": 9,
+        "E": 8.5
+      }
+    },
+    "verdict": {
+      "recommendation": "tool_a",
+      "summary": "For 90% of YouTube creators, ChatGPT ($0–$20/mo) is the clear winner due to its extraordinary versatility and lower cost. Jasper ($39–$49/mo) is only justified for agencies and commercial brand channels that require rigorous multi-writer brand voice synchronization and native SurferSEO integration.",
+      "reasoning": [
+        "ChatGPT provides 95% of Jasper's scripting capabilities at half the price (or free).",
+        "Jasper's Brand Voice and template workflows are valuable for teams, but overpriced for solo creators.",
+        "ChatGPT's multimodal voice mode and image generation offer broader creator utility."
+      ],
+      "conditions": "Choose ChatGPT if you are a solo creator or on a budget; choose Jasper only if you run a team or agency requiring strict brand voice enforcement."
+    },
+    "evidence": [
+      "ev-chatgpt-official-001",
+      "ev-jasper-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "midjourney-vs-canva-ai",
+    "slug": "midjourney-vs-canva-ai",
+    "title": "Midjourney vs Canva AI for YouTube Thumbnails",
+    "tool_a_id": "midjourney",
+    "tool_b_id": "canva-ai",
+    "who_should_choose_a": "Creators needing photorealistic, dramatic, concept-art backgrounds, hyper-detailed faces, and cinematic visual assets.",
+    "who_should_choose_b": "Creators needing fast, click-worthy thumbnail composition with bold text outlines, one-click background removal, and standard YouTube templates.",
+    "dimensions": [
+      {
+        "dimension": "Image Quality & Photorealism",
+        "value_a": "Industry benchmark in photorealistic textures, volumetric lighting, and intricate artistic detail.",
+        "value_b": "Magic Media produces good basic visuals, but lacks the deep photographic realism of Midjourney.",
+        "winner": "tool_a",
+        "evidence_ref": "ev-midjourney-official-001"
+      },
+      {
+        "dimension": "Typography & Graphic Design",
+        "value_a": "Generates flat pixel images; text rendering is inconsistent and cannot be repositioned or stroked.",
+        "value_b": "Full vector graphic canvas: drag-and-drop text, neon stroke borders, drop shadows, and auto-snapping.",
+        "winner": "tool_b",
+        "evidence_ref": "ev-canva-official-001"
+      },
+      {
+        "dimension": "Workflow Speed to Finished Thumbnail",
+        "value_a": "Generates background image; requires transferring asset into an editing tool to add titles and export.",
+        "value_b": "One-stop shop: generate image, remove background, add title text, export 1280x720 in under 2 minutes.",
+        "winner": "tool_b",
+        "evidence_ref": "ev-canva-official-001"
+      },
+      {
+        "dimension": "Pricing & Free Tier",
+        "value_a": "No free plan; Basic tier starts at $8/mo (annual) / $10/mo (monthly).",
+        "value_b": "Generous free plan with basic AI credits; Pro plan is $10/mo (annual) / $15/mo (monthly).",
+        "winner": "tool_b",
+        "evidence_ref": "ev-canva-official-001"
+      }
+    ],
+    "pace_comparison": {
+      "tool_a": {
+        "P": 8.9,
+        "A": 9.8,
+        "C": 8.4,
+        "E": 7.6
+      },
+      "tool_b": {
+        "P": 9.2,
+        "A": 8.5,
+        "C": 8.8,
+        "E": 9.6
+      }
+    },
+    "verdict": {
+      "recommendation": "tool_b",
+      "summary": "Canva AI is our top recommendation for solo YouTube thumbnail production because thumbnails require text hierarchy and graphic layout, not just raw artwork. The ideal pro creator stack uses Midjourney to generate the hero background and Canva to add subject cutouts and bold typography.",
+      "reasoning": [
+        "Canva produces finished, upload-ready YouTube thumbnails with text and borders in 1 tool.",
+        "Midjourney produces far superior raw imagery, but cannot do layer compositing or clean typography.",
+        "Canva's free plan allows zero-cost thumbnail publishing with commercial clearance."
+      ],
+      "conditions": "Choose Canva for fast all-in-one thumbnail creation; choose Midjourney for hyper-realistic visual assets; combine both for the highest possible CTR."
+    },
+    "evidence": [
+      "ev-midjourney-official-001",
+      "ev-canva-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "canva-vs-firefly",
+    "slug": "canva-vs-firefly",
+    "title": "Canva AI vs Adobe Firefly for YouTube Thumbnails",
+    "tool_a_id": "canva-ai",
+    "tool_b_id": "adobe-firefly",
+    "who_should_choose_a": "Creators who want an all-in-one graphic design studio to compose complete YouTube thumbnails with bold stroke text, drop shadows, stickers, and standard 1280x720 templates in under 2 minutes.",
+    "who_should_choose_b": "Creators and brand designers who need commercially indemnified AI artwork, advanced Generative Fill to expand or modify backgrounds, and seamless integration with Photoshop.",
+    "dimensions": [
+      {
+        "dimension": "Commercial Safety & Legal Indemnity",
+        "value_a": "Commercial use permitted on Free and Pro tiers with standard terms of service compliance.",
+        "value_b": "Trained exclusively on licensed Adobe Stock and public domain content, offering enterprise-grade IP indemnity.",
+        "winner": "tool_b",
+        "evidence_ref": "ev-firefly-official-001"
+      },
+      {
+        "dimension": "Generative Image Quality & Inpainting",
+        "value_a": "Magic Media produces clean basic imagery, but prompt manipulation and localized editing are limited.",
+        "value_b": "State-of-the-art Firefly Image 3 model with pinpoint Generative Fill (expand 16:9 canvas, remove/insert objects).",
+        "winner": "tool_b",
+        "evidence_ref": "ev-firefly-official-001"
+      },
+      {
+        "dimension": "Graphic Design & Text Compositing",
+        "value_a": "Comprehensive vector canvas: drag-and-drop typography, neon outlines, curved text, YouTube thumbnail presets.",
+        "value_b": "Generates flat image assets and 3D text effects; lacks a multi-layer vector layout canvas for full thumbnail design.",
+        "winner": "tool_a",
+        "evidence_ref": "ev-canva-official-001"
+      },
+      {
+        "dimension": "Pricing & Entry Tier",
+        "value_a": "Generous permanent free plan with monthly AI credits; Pro is $10/mo (annual) or $15/mo (monthly).",
+        "value_b": "Free plan with 25 credits/mo (watermarked); Premium is $4.99/mo with 100 commercial credits/mo.",
+        "winner": "tool_a",
+        "evidence_ref": "ev-canva-official-001"
+      }
+    ],
+    "pace_comparison": {
+      "tool_a": {
+        "P": 9.2,
+        "A": 8.5,
+        "C": 8.8,
+        "E": 9.6
+      },
+      "tool_b": {
+        "P": 9.2,
+        "A": 9,
+        "C": 9.1,
+        "E": 9.5
+      }
+    },
+    "verdict": {
+      "recommendation": "tool_a",
+      "summary": "Canva AI remains the top pick for solo creators who need to produce finished, upload-ready YouTube thumbnails in a single tool with bold text and borders. However, Adobe Firefly is the superior engine for creators requiring guaranteed commercial safety and pixel-perfect Generative Fill to expand scenes.",
+      "reasoning": [
+        "Canva provides complete graphic layout capabilities (typography, borders, stickers) that Firefly lacks.",
+        "Firefly provides superior AI image generation quality and industry-best Generative Fill canvas expansion.",
+        "A powerful hybrid workflow is generating the hero background in Firefly and assembling title text in Canva."
+      ],
+      "conditions": "Choose Canva AI for complete fast thumbnail assembly; choose Adobe Firefly for legally safe visual generation and precision Generative Fill."
+    },
+    "evidence": [
+      "ev-canva-official-001",
+      "ev-firefly-official-001"
+    ],
+    "last_verified": "2026-08-26"
+  },
+  {
+    "id": "premiere-vs-davinci",
+    "slug": "premiere-vs-davinci",
+    "title": "Premiere Pro vs DaVinci Resolve for Video Editing",
+    "tool_a_id": "premiere-pro",
+    "tool_b_id": "davinci-resolve",
+    "who_should_choose_a": "Creators and agencies heavily integrated into the Adobe Creative Cloud ecosystem who rely on Dynamic Link with After Effects, Photoshop, and Frame.io review workflows.",
+    "who_should_choose_b": "Solo creators, colorists, and budget-conscious filmmakers wanting Hollywood-standard node-based color grading, Fairlight audio post-production, and full 4K commercial exports without any monthly subscription fees.",
+    "dimensions": [
+      {
+        "dimension": "Price & True Cost",
+        "value_a": "Subscription-only: $22.99/month (annual plan) or $275.88/year recurring indefinitely.",
+        "value_b": "100% Free version (no watermarks, up to 4K 60fps) or Studio version ($295 one-time perpetual license).",
+        "winner": "tool_b",
+        "evidence_ref": "ev-davinci-official-001"
+      },
+      {
+        "dimension": "Color Grading & Finishing",
+        "value_a": "Lumetri Color panel is fast and intuitive for basic primary/secondary adjustments, but limited for complex nodal work.",
+        "value_b": "Worldwide Hollywood benchmark for color science, node-based grading, HDR wheels, and deep color management.",
+        "winner": "tool_b",
+        "evidence_ref": "ev-davinci-official-001"
+      },
+      {
+        "dimension": "Motion Graphics & Ecosystem Integration",
+        "value_a": "Unmatched Dynamic Link with After Effects, Adobe Stock, and Photoshop with zero intermediate rendering.",
+        "value_b": "Built-in Fusion node-based compositor; exceptionally powerful but carries a steeper learning curve than layer-based tools.",
+        "winner": "tool_a",
+        "evidence_ref": "ev-premiere-official-001"
+      },
+      {
+        "dimension": "Audio Post-Production",
+        "value_a": "Essential Sound panel provides quick auto-ducking; advanced audio requires round-tripping to Adobe Audition.",
+        "value_b": "Fairlight DAW is built right into the application, supporting full multitrack mixing, busing, and VST plugins natively.",
+        "winner": "tool_b",
+        "evidence_ref": "ev-davinci-official-001"
+      },
+      {
+        "dimension": "Performance & GPU Acceleration",
+        "value_a": "Capable Mercury Playback Engine, though prone to project bloat and occasional timeline stuttering on complex files.",
+        "value_b": "Optimized GPU architecture providing ultra-responsive scrub playback and accelerated ProRes/DNx rendering.",
+        "winner": "tool_b",
+        "evidence_ref": "ev-davinci-official-001"
+      },
+      {
+        "dimension": "Ease of Use & Learning Curve",
+        "value_a": "Traditional track-based timeline familiar to almost all video editors; extensive online tutorial ecosystem.",
+        "value_b": "Structured page layout (Cut, Edit, Fusion, Color, Fairlight, Deliver) requires learning specific modular paradigms.",
+        "winner": "tool_a",
+        "evidence_ref": "ev-premiere-official-001"
+      }
+    ],
+    "pace_comparison": {
+      "tool_a": {
+        "P": 7.8,
+        "A": 9.9,
+        "C": 9.8,
+        "E": 8.5
+      },
+      "tool_b": {
+        "P": 9,
+        "A": 10,
+        "C": 10,
+        "E": 6.5
+      }
+    },
+    "verdict": {
+      "recommendation": "tool_b",
+      "summary": "For the vast majority of independent creators and filmmakers, DaVinci Resolve is the superior decision. Its completely free, unwatermarked tier provides 4K commercial exports, unmatched color grading, and built-in Fairlight audio. Premiere Pro remains the top recommendation primarily for collaborative agencies tied into the Adobe Creative Cloud and After Effects Dynamic Link ecosystem.",
+      "reasoning": [
+        "DaVinci Resolve Free provides a complete commercial production suite with zero subscription fees or watermarks.",
+        "DaVinci Resolve Studio ($295 one-time) breaks even against Premiere Pro's subscription cost in under 13 months.",
+        "DaVinci's node-based color grading and Fairlight audio post-production outperform Premiere's native tools.",
+        "Premiere Pro maintains an essential advantage for editors whose workflows depend on Dynamic Link with After Effects."
+      ],
+      "conditions": "Choose DaVinci Resolve if you want the industry's best color grading and zero recurring software fees. Choose Premiere Pro if your workflow relies heavily on After Effects motion graphics or agency client handoffs."
+    },
+    "evidence": [
+      "ev-premiere-official-001",
+      "ev-davinci-official-001"
+    ],
+    "last_verified": "2026-08-26"
+  }
+]

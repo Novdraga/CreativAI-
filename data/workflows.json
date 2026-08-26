@@ -1,0 +1,640 @@
+[
+  {
+    "id": "faceless-youtube",
+    "name": "Faceless YouTube Video Creation",
+    "slug": "faceless-youtube",
+    "goal": "Create complete YouTube videos without showing your face",
+    "audience": "Beginners, solo creators, faceless YouTubers",
+    "budget_range": "$0–$50/month",
+    "experience_level": "Beginner",
+    "steps": [
+      {
+        "order": 1,
+        "name": "Research & Scripting",
+        "job_to_be_done": "Generate engaging video concepts, hook variations, and a complete spoken script formatted with visual cue markers.",
+        "inputs": [
+          "Video topic idea or niche trend",
+          "Target audience and format parameters"
+        ],
+        "outputs": [
+          "Complete spoken script (800–1,500 words)",
+          "Scene-by-scene visual descriptions and b-roll cues"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "chatgpt",
+            "claude"
+          ],
+          "alternative": [
+            "jasper"
+          ]
+        }
+      },
+      {
+        "order": 2,
+        "name": "Voiceover Generation",
+        "job_to_be_done": "Convert script text into high-fidelity, emotionally nuanced voiceover narration with natural pauses.",
+        "inputs": [
+          "Spoken script text"
+        ],
+        "outputs": [
+          "High-quality voice narration audio file (MP3/WAV)"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "elevenlabs"
+          ],
+          "alternative": [
+            "murf"
+          ]
+        }
+      },
+      {
+        "order": 3,
+        "name": "Video Assembly & Visual B-Roll",
+        "job_to_be_done": "Generate cinematic b-roll video clips matching visual cues and assemble video sequences aligned to audio pacing.",
+        "inputs": [
+          "Scene visual descriptions",
+          "Voiceover audio timing"
+        ],
+        "outputs": [
+          "Generated AI video clips (MP4)",
+          "Rough-cut video sequence"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "runway"
+          ],
+          "alternative": [
+            "pictory",
+            "capcut",
+            "davinci-resolve"
+          ]
+        }
+      },
+      {
+        "order": 4,
+        "name": "Thumbnail Creation",
+        "job_to_be_done": "Design a high-CTR YouTube thumbnail using AI subject cutouts, bold typography, and visual hooks.",
+        "inputs": [
+          "Video title",
+          "Core visual hook concept"
+        ],
+        "outputs": [
+          "1280x720 PNG/JPG thumbnail"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "canva-ai"
+          ],
+          "alternative": [
+            "adobe-firefly"
+          ]
+        }
+      }
+    ],
+    "recommended_tools": [
+      "chatgpt",
+      "claude",
+      "elevenlabs",
+      "runway",
+      "canva-ai"
+    ],
+    "alternative_tools": [
+      "jasper",
+      "murf",
+      "pictory",
+      "capcut",
+      "davinci-resolve"
+    ],
+    "estimated_cost": "$17.00–$37.00/month",
+    "estimated_cost_per_result": {
+      "unit": "per finished 3-minute video",
+      "starter_profile_cost": "$1.70",
+      "volume_profile_cost": "$0.55",
+      "assumptions": "Starter profile assumes 10 videos/month using ElevenLabs Starter ($5) + Runway Standard ($12) + Free Scripting (ChatGPT/Claude) + Canva Free ($0). Volume profile assumes batch-rendered short clips utilizing shared plan credits."
+    },
+    "commercial_notes": "Commercial monetization requires at least ElevenLabs Starter ($5/mo) since the Free tier is strictly non-commercial with mandatory attribution. Runway requires Standard ($12/mo) to remove watermarks. ChatGPT, Claude, and Canva Free tiers allow commercial monetization.",
+    "evidence": [
+      "ev-chatgpt-official-001",
+      "ev-claude-official-001",
+      "ev-elevenlabs-official-001",
+      "ev-runway-official-001",
+      "ev-canva-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "youtube-shorts",
+    "name": "YouTube Shorts & TikTok Viral Pipeline",
+    "slug": "youtube-shorts",
+    "goal": "High-volume creation of engaging 30-60s vertical short videos",
+    "audience": "Shorts creators, TikTokers, Instagram Reels creators",
+    "budget_range": "$0–$40/month",
+    "experience_level": "Beginner",
+    "steps": [
+      {
+        "order": 1,
+        "name": "Hook & Micro-Scripting",
+        "job_to_be_done": "Draft 3-second attention-grabbing hooks and 100-word punchy scripts structured for maximum loop retention.",
+        "inputs": [
+          "Trending niche topic",
+          "Target demographic"
+        ],
+        "outputs": [
+          "60-second micro-script with subtitle break markers"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "chatgpt",
+            "chatgpt"
+          ],
+          "alternative": [
+            "claude"
+          ]
+        }
+      },
+      {
+        "order": 2,
+        "name": "High-Energy Voiceover",
+        "job_to_be_done": "Generate fast-paced, dynamic voice narration with energetic cadence.",
+        "inputs": [
+          "Micro-script text"
+        ],
+        "outputs": [
+          "45-60s voice audio file"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "elevenlabs"
+          ],
+          "alternative": [
+            "play-ht"
+          ]
+        }
+      },
+      {
+        "order": 3,
+        "name": "Automated Video & Captions",
+        "job_to_be_done": "Auto-match background B-roll footage and generate animated karaoke-style dynamic subtitles.",
+        "inputs": [
+          "Voice audio",
+          "Script text"
+        ],
+        "outputs": [
+          "9:16 vertical MP4 video with synced captions"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "pictory"
+          ],
+          "alternative": [
+            "descript",
+            "capcut"
+          ]
+        }
+      },
+      {
+        "order": 4,
+        "name": "Vertical Cover Frame",
+        "job_to_be_done": "Create a high-contrast thumbnail cover frame to maximize feed click-through rates.",
+        "inputs": [
+          "Video title",
+          "Hero element"
+        ],
+        "outputs": [
+          "1080x1920 cover image"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "canva-ai"
+          ],
+          "alternative": [
+            "adobe-firefly"
+          ]
+        }
+      }
+    ],
+    "recommended_tools": [
+      "chatgpt",
+      "copy-ai",
+      "elevenlabs",
+      "pictory",
+      "canva-ai"
+    ],
+    "alternative_tools": [
+      "claude",
+      "play-ht",
+      "descript",
+      "leonardo-ai",
+      "capcut"
+    ],
+    "estimated_cost": "$5.00–$24.00/month",
+    "estimated_cost_per_result": {
+      "unit": "per finished 60-second Short",
+      "starter_profile_cost": "$0.45",
+      "volume_profile_cost": "$0.15",
+      "assumptions": "Starter profile assumes 20 Shorts/mo with ElevenLabs Starter ($5) + Pictory Standard ($19). Volume profile assumes 60 Shorts/mo on bulk plans."
+    },
+    "commercial_notes": "ElevenLabs Starter ($5/mo) clears commercial rights without attribution. Pictory Standard ($19/mo) provides fully cleared Getty/Storyblocks stock assets for monetized YouTube Shorts.",
+    "evidence": [
+      "ev-chatgpt-official-001",
+      "ev-copyai-official-001",
+      "ev-elevenlabs-official-001",
+      "ev-pictory-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "longform-essay",
+    "name": "Long-Form Video Essay Pipeline",
+    "slug": "longform-essay",
+    "goal": "Produce deep-dive documentary video essays with verified research and cinematic visuals",
+    "audience": "Video essayists, documentary filmmakers, investigative creators",
+    "budget_range": "$20–$80/month",
+    "experience_level": "Intermediate",
+    "steps": [
+      {
+        "order": 1,
+        "name": "Source-Grounded Research",
+        "job_to_be_done": "Conduct citation-backed web research and compile verified historical facts and academic sources.",
+        "inputs": [
+          "Essay subject",
+          "Key research questions"
+        ],
+        "outputs": [
+          "Detailed research dossier with clickable source citations"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "perplexity"
+          ],
+          "alternative": [
+            "chatgpt"
+          ]
+        }
+      },
+      {
+        "order": 2,
+        "name": "Narrative Scriptwriting",
+        "job_to_be_done": "Draft an evocative 2,500-word documentary script with nuanced literary pacing and narrative story arcs.",
+        "inputs": [
+          "Research dossier",
+          "Tone guidelines"
+        ],
+        "outputs": [
+          "Full multi-chapter video essay script"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "claude"
+          ],
+          "alternative": [
+            "jasper"
+          ]
+        }
+      },
+      {
+        "order": 3,
+        "name": "Documentary Voice Narration",
+        "job_to_be_done": "Synthesize immersive, human-sounding narrative voiceover with authentic breathing intervals.",
+        "inputs": [
+          "Chapter script text"
+        ],
+        "outputs": [
+          "High-bitrate voiceover audio tracks"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "elevenlabs"
+          ],
+          "alternative": [
+            "murf",
+            "premiere-pro",
+            "davinci-resolve"
+          ]
+        }
+      },
+      {
+        "order": 4,
+        "name": "Cinematic B-Roll & Visual Compositing",
+        "job_to_be_done": "Generate photorealistic scene cutaways and edit audio/video timeline with text-based precision.",
+        "inputs": [
+          "Script scene descriptions",
+          "Voiceover track"
+        ],
+        "outputs": [
+          "Cinematic B-roll clips and edited rough sequence"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "runway",
+            "descript"
+          ],
+          "alternative": [
+            "synthesia"
+          ]
+        }
+      },
+      {
+        "order": 5,
+        "name": "Cinematic Thumbnail Concept",
+        "job_to_be_done": "Render a photorealistic, painterly thumbnail visual with dramatic lighting.",
+        "inputs": [
+          "Video core metaphor",
+          "Character visual hook"
+        ],
+        "outputs": [
+          "16:9 4K thumbnail background + layered canvas"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "midjourney",
+            "canva-ai"
+          ],
+          "alternative": [
+            "adobe-firefly"
+          ]
+        }
+      }
+    ],
+    "recommended_tools": [
+      "perplexity",
+      "claude",
+      "elevenlabs",
+      "runway",
+      "descript",
+      "midjourney",
+      "canva-ai"
+    ],
+    "alternative_tools": [
+      "chatgpt",
+      "jasper",
+      "murf",
+      "synthesia",
+      "leonardo-ai",
+      "premiere-pro",
+      "davinci-resolve"
+    ],
+    "estimated_cost": "$35.00–$75.00/month",
+    "estimated_cost_per_result": {
+      "unit": "per finished 15-minute video essay",
+      "starter_profile_cost": "$3.50",
+      "volume_profile_cost": "$1.80",
+      "assumptions": "Assumes 4 deep-dive long-form essays per month utilizing Claude Pro ($20) + ElevenLabs Creator ($22) + Midjourney Basic ($8) + Descript Hobbyist ($12)."
+    },
+    "commercial_notes": "All tools on paid tiers provide unencumbered commercial monetization rights. Perplexity citations ensure script compliance with copyright and factual truth standards.",
+    "evidence": [
+      "ev-perplexity-official-001",
+      "ev-claude-official-001",
+      "ev-elevenlabs-official-001",
+      "ev-runway-official-001",
+      "ev-midjourney-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "podcast-narration",
+    "name": "Podcast & Audio Storytelling Pipeline",
+    "slug": "podcast-narration",
+    "goal": "Produce episodic spoken-word audio, multi-speaker podcasts, and audiobooks",
+    "audience": "Podcasters, audio creators, fiction narrators",
+    "budget_range": "$12–$50/month",
+    "experience_level": "Beginner",
+    "steps": [
+      {
+        "order": 1,
+        "name": "Episode Outlining & Dialogue Scripting",
+        "job_to_be_done": "Outline episode talking points and format conversational dialogue between virtual co-hosts.",
+        "inputs": [
+          "Episode topic",
+          "Co-host personas"
+        ],
+        "outputs": [
+          "Two-column conversational dialogue script"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "claude",
+            "chatgpt"
+          ],
+          "alternative": [
+            "jasper"
+          ]
+        }
+      },
+      {
+        "order": 2,
+        "name": "Multi-Speaker Voice Synthesis",
+        "job_to_be_done": "Generate distinct, realistic character voices with emotional expression and conversational pacing.",
+        "inputs": [
+          "Dialogue script"
+        ],
+        "outputs": [
+          "Multi-track audio voice stems"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "elevenlabs",
+            "play-ht"
+          ],
+          "alternative": [
+            "murf",
+            "suno"
+          ]
+        }
+      },
+      {
+        "order": 3,
+        "name": "Studio Audio Mastering & Cleanup",
+        "job_to_be_done": "Clean background room tone, level speech loudness, and add intro/outro music beds.",
+        "inputs": [
+          "Voice stems",
+          "Podcast intro track"
+        ],
+        "outputs": [
+          "Mastered MP3/WAV podcast episode"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "descript"
+          ],
+          "alternative": [
+            "murf",
+            "suno",
+            "audacity",
+            "reaper"
+          ]
+        }
+      },
+      {
+        "order": 4,
+        "name": "Podcast Cover Art",
+        "job_to_be_done": "Design standard 3000x3000px Spotify & Apple Podcasts album artwork.",
+        "inputs": [
+          "Show title",
+          "Visual theme"
+        ],
+        "outputs": [
+          "Square 3000x3000px JPG/PNG artwork"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "canva-ai",
+            "midjourney"
+          ],
+          "alternative": [
+            "adobe-firefly"
+          ]
+        }
+      }
+    ],
+    "recommended_tools": [
+      "claude",
+      "chatgpt",
+      "elevenlabs",
+      "play-ht",
+      "descript",
+      "canva-ai"
+    ],
+    "alternative_tools": [
+      "copy-ai",
+      "murf",
+      "midjourney",
+      "leonardo-ai",
+      "audacity",
+      "reaper"
+    ],
+    "estimated_cost": "$17.00–$45.00/month",
+    "estimated_cost_per_result": {
+      "unit": "per finished 30-minute podcast episode",
+      "starter_profile_cost": "$1.20",
+      "volume_profile_cost": "$0.40",
+      "assumptions": "Assumes 4 weekly podcast episodes per month using Descript Hobbyist ($12) + ElevenLabs Starter ($5) + free Canva art."
+    },
+    "commercial_notes": "ElevenLabs and Play.ht commercial licenses cover Spotify, Apple Podcasts, and YouTube Music ad monetization. Descript Studio Sound eliminates expensive physical studio hardware.",
+    "evidence": [
+      "ev-claude-official-001",
+      "ev-elevenlabs-official-001",
+      "ev-descript-official-001",
+      "ev-playht-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  },
+  {
+    "id": "content-repurposing",
+    "name": "Long-to-Short Content Repurposing Pipeline",
+    "slug": "content-repurposing",
+    "goal": "Transform long-form recordings into viral social clips, threads, and summaries",
+    "audience": "YouTubers with existing libraries, stream clippers, agencies",
+    "budget_range": "$12–$45/month",
+    "experience_level": "Beginner",
+    "steps": [
+      {
+        "order": 1,
+        "name": "Transcription & Viral Clip Extraction",
+        "job_to_be_done": "Auto-transcribe 1-hour footage and identify the top 5 most engaging viral segments.",
+        "inputs": [
+          "Full video recording (MP4/MOV)"
+        ],
+        "outputs": [
+          "Timestamped viral clip selections with text transcripts"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "descript",
+            "pictory"
+          ],
+          "alternative": [
+            "capcut"
+          ]
+        }
+      },
+      {
+        "order": 2,
+        "name": "Short-Form Formatting & Captions",
+        "job_to_be_done": "Auto-refocus speaker into 9:16 vertical layout and generate animated dynamic captions.",
+        "inputs": [
+          "Extracted clip segments"
+        ],
+        "outputs": [
+          "Vertical 9:16 captioned video files"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "descript",
+            "pictory"
+          ],
+          "alternative": []
+        }
+      },
+      {
+        "order": 3,
+        "name": "Newsletter & Social Thread Adaptation",
+        "job_to_be_done": "Convert the transcript into an engaging written newsletter summary and Twitter/X thread.",
+        "inputs": [
+          "Video transcript"
+        ],
+        "outputs": [
+          "Formatted Markdown newsletter and 7-tweet thread"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "chatgpt",
+            "chatgpt"
+          ],
+          "alternative": [
+            "claude"
+          ]
+        }
+      },
+      {
+        "order": 4,
+        "name": "Social Hook Thumbnail",
+        "job_to_be_done": "Design branded cover cards for Instagram Reels and LinkedIn carousels.",
+        "inputs": [
+          "Clip headline",
+          "Brand assets"
+        ],
+        "outputs": [
+          "PNG cover assets"
+        ],
+        "tool_slots": {
+          "recommended": [
+            "canva-ai"
+          ],
+          "alternative": [
+            "adobe-firefly"
+          ]
+        }
+      }
+    ],
+    "recommended_tools": [
+      "descript",
+      "pictory",
+      "copy-ai",
+      "chatgpt",
+      "canva-ai"
+    ],
+    "alternative_tools": [
+      "claude",
+      "leonardo-ai",
+      "capcut"
+    ],
+    "estimated_cost": "$12.00–$36.00/month",
+    "estimated_cost_per_result": {
+      "unit": "per repurposed clip package",
+      "starter_profile_cost": "$0.25",
+      "volume_profile_cost": "$0.08",
+      "assumptions": "Assumes converting 4 long videos into 20 social clips per month using Descript Hobbyist ($12) + Copy.ai Free/Starter."
+    },
+    "commercial_notes": "Descript Hobbyist ($12/mo) removes all watermarks and exports in full 1080p for client and social monetization.",
+    "evidence": [
+      "ev-descript-official-001",
+      "ev-pictory-official-001",
+      "ev-copyai-official-001",
+      "ev-canva-official-001"
+    ],
+    "last_verified": "2026-08-25"
+  }
+]

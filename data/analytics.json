@@ -1,0 +1,862 @@
+[
+  {
+    "id": "evt-1787690014424-hc3xd",
+    "timestamp": "2026-08-25T20:33:34.424Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "funnelStep": "home_visit",
+      "path": "/"
+    },
+    "userAgent": "CreativAI-Analytics-QA/1.0"
+  },
+  {
+    "id": "evt-1787690014441-77k0w",
+    "timestamp": "2026-08-25T20:33:34.441Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "funnelStep": "stack_click",
+      "path": "/stack"
+    },
+    "userAgent": "CreativAI-Analytics-QA/1.0"
+  },
+  {
+    "id": "evt-1787690014449-dcp3g",
+    "timestamp": "2026-08-25T20:33:34.449Z",
+    "eventName": "funnel_result_view",
+    "properties": {
+      "funnelStep": "result_view",
+      "goal": "faceless-youtube",
+      "budget": "50",
+      "tools": [
+        "chatgpt",
+        "elevenlabs",
+        "runway",
+        "canva-ai"
+      ]
+    },
+    "userAgent": "CreativAI-Analytics-QA/1.0"
+  },
+  {
+    "id": "evt-1787690014458-xm3ry",
+    "timestamp": "2026-08-25T20:33:34.458Z",
+    "eventName": "user_feedback",
+    "properties": {
+      "toolMentioned": "runway",
+      "message": "The camera motion benchmark is super helpful! Could you add team seats?"
+    },
+    "userAgent": "CreativAI-Analytics-QA/1.0"
+  },
+  {
+    "id": "evt-1787698415503-gvvd9",
+    "timestamp": "2026-08-25T22:53:35.503Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787698415509-z5h2f",
+    "timestamp": "2026-08-25T22:53:35.509Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787700392925-zvmok",
+    "timestamp": "2026-08-25T23:26:32.925Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787700392929-vtcph",
+    "timestamp": "2026-08-25T23:26:32.929Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787700428384-as485",
+    "timestamp": "2026-08-25T23:27:08.384Z",
+    "eventName": "funnel_affiliate_click",
+    "properties": {
+      "path": "/tools/chatgpt",
+      "search": "",
+      "referrer": "tool_page",
+      "funnelStep": "affiliate_click",
+      "toolId": "chatgpt",
+      "affiliateUrl": "https://chatgpt.com"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787700442321-rq8au",
+    "timestamp": "2026-08-25T23:27:22.322Z",
+    "eventName": "funnel_affiliate_click",
+    "properties": {
+      "path": "/tools/canva-ai",
+      "search": "",
+      "referrer": "tool_page",
+      "funnelStep": "affiliate_click",
+      "toolId": "canva-ai",
+      "affiliateUrl": "https://partner.canva.com/creativai"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787700508959-m6rk2",
+    "timestamp": "2026-08-25T23:28:28.959Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787700508961-6pwu2",
+    "timestamp": "2026-08-25T23:28:28.961Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787705496609-2wlja",
+    "timestamp": "2026-08-26T00:51:36.609Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787705496616-wtefl",
+    "timestamp": "2026-08-26T00:51:36.616Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787713441777-yqa0x",
+    "timestamp": "2026-08-26T03:04:01.777Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787713441780-5rn43",
+    "timestamp": "2026-08-26T03:04:01.781Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787713493521-hijf4",
+    "timestamp": "2026-08-26T03:04:53.521Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787713493524-7pke4",
+    "timestamp": "2026-08-26T03:04:53.524Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787713827381-01qs7",
+    "timestamp": "2026-08-26T03:10:27.381Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787713827383-i0t0x",
+    "timestamp": "2026-08-26T03:10:27.383Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787725179407-6tf2s",
+    "timestamp": "2026-08-26T06:19:39.407Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787725179411-509cr",
+    "timestamp": "2026-08-26T06:19:39.411Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787725183702-fi0ku",
+    "timestamp": "2026-08-26T06:19:43.702Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787725183705-3o7dh",
+    "timestamp": "2026-08-26T06:19:43.705Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781574560-nsudf",
+    "timestamp": "2026-08-26T21:59:34.560Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781574565-3fwm7",
+    "timestamp": "2026-08-26T21:59:34.565Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781617153-4j00q",
+    "timestamp": "2026-08-26T22:00:17.153Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781617166-ril2q",
+    "timestamp": "2026-08-26T22:00:17.167Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781634682-d2c19",
+    "timestamp": "2026-08-26T22:00:34.682Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781634686-jy0u6",
+    "timestamp": "2026-08-26T22:00:34.686Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781637196-prun7",
+    "timestamp": "2026-08-26T22:00:37.196Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/find-my-stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781637199-d8jmn",
+    "timestamp": "2026-08-26T22:00:37.199Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/find-my-stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781654479-cnq28",
+    "timestamp": "2026-08-26T22:00:54.479Z",
+    "eventName": "funnel_result_view",
+    "properties": {
+      "path": "/stack/result",
+      "search": "?goal=faceless-youtube&budget=50&experience=beginner&requirement=quality",
+      "referrer": "direct",
+      "funnelStep": "result_view",
+      "goal": "faceless-youtube",
+      "budget": "50",
+      "tools": [
+        "claude",
+        "elevenlabs",
+        "premiere-pro",
+        "midjourney"
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781654492-r7796",
+    "timestamp": "2026-08-26T22:00:54.492Z",
+    "eventName": "funnel_result_view",
+    "properties": {
+      "path": "/stack/result",
+      "search": "?goal=faceless-youtube&budget=50&experience=beginner&requirement=quality",
+      "referrer": "direct",
+      "funnelStep": "result_view",
+      "goal": "faceless-youtube",
+      "budget": "50",
+      "tools": [
+        "claude",
+        "elevenlabs",
+        "premiere-pro",
+        "midjourney"
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781673323-chmyr",
+    "timestamp": "2026-08-26T22:01:13.323Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/find-my-stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781673328-fzi6q",
+    "timestamp": "2026-08-26T22:01:13.328Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/find-my-stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781674457-bquvs",
+    "timestamp": "2026-08-26T22:01:14.457Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781674505-7jrva",
+    "timestamp": "2026-08-26T22:01:14.505Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781718632-ius9w",
+    "timestamp": "2026-08-26T22:01:58.632Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781718636-mrgb7",
+    "timestamp": "2026-08-26T22:01:58.636Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781801677-4vu09",
+    "timestamp": "2026-08-26T22:03:21.677Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781801679-j5rjb",
+    "timestamp": "2026-08-26T22:03:21.679Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781829794-pv4pd",
+    "timestamp": "2026-08-26T22:03:49.794Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787781829797-l8zer",
+    "timestamp": "2026-08-26T22:03:49.797Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782008980-prwt2",
+    "timestamp": "2026-08-26T22:06:48.980Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782008983-0b7h0",
+    "timestamp": "2026-08-26T22:06:48.983Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782079508-llkrf",
+    "timestamp": "2026-08-26T22:07:59.509Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782079510-q3xbq",
+    "timestamp": "2026-08-26T22:07:59.510Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782173509-em7dv",
+    "timestamp": "2026-08-26T22:09:33.509Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "http://localhost:3000/stack",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782173561-hvzst",
+    "timestamp": "2026-08-26T22:09:33.561Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "http://localhost:3000/stack",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782234062-fldeh",
+    "timestamp": "2026-08-26T22:10:34.062Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "http://localhost:3000/benchmarks",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782234065-noni7",
+    "timestamp": "2026-08-26T22:10:34.065Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "http://localhost:3000/benchmarks",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782246654-bh9tt",
+    "timestamp": "2026-08-26T22:10:46.654Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "http://localhost:3000/benchmarks",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782246656-rqim7",
+    "timestamp": "2026-08-26T22:10:46.656Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "http://localhost:3000/benchmarks",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782255553-zzhmj",
+    "timestamp": "2026-08-26T22:10:55.553Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "http://localhost:3000/benchmarks",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782255572-3dpej",
+    "timestamp": "2026-08-26T22:10:55.572Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "http://localhost:3000/benchmarks",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782585036-gd5ls",
+    "timestamp": "2026-08-26T22:16:25.036Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "http://localhost:3000/stack",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782585043-uvih7",
+    "timestamp": "2026-08-26T22:16:25.043Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "http://localhost:3000/stack",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782587224-mbgsy",
+    "timestamp": "2026-08-26T22:16:27.224Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "http://localhost:3000/stack",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787782587249-calos",
+    "timestamp": "2026-08-26T22:16:27.249Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "http://localhost:3000/stack",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787783084108-xepnk",
+    "timestamp": "2026-08-26T22:24:44.108Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787783084118-dii26",
+    "timestamp": "2026-08-26T22:24:44.118Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787783085258-i5yrd",
+    "timestamp": "2026-08-26T22:24:45.258Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/find-my-stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787783085268-1fkg2",
+    "timestamp": "2026-08-26T22:24:45.268Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/find-my-stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787783096709-5e9gp",
+    "timestamp": "2026-08-26T22:24:56.709Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787783096714-qxvz1",
+    "timestamp": "2026-08-26T22:24:56.714Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787783148369-r7xn1",
+    "timestamp": "2026-08-26T22:25:48.369Z",
+    "eventName": "funnel_result_view",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "result_view",
+      "goal": "longform",
+      "budget": "50",
+      "tools": [
+        "perplexity",
+        "claude",
+        "elevenlabs",
+        "premiere-pro",
+        "adobe-firefly"
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787783173775-1tea7",
+    "timestamp": "2026-08-26T22:26:13.775Z",
+    "eventName": "funnel_affiliate_click",
+    "properties": {
+      "path": "/tools/elevenlabs",
+      "search": "",
+      "referrer": "tool_page",
+      "funnelStep": "affiliate_click",
+      "toolId": "elevenlabs",
+      "affiliateUrl": "https://elevenlabs.io/?from=creativai"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787783179690-pd92s",
+    "timestamp": "2026-08-26T22:26:19.690Z",
+    "eventName": "funnel_affiliate_click",
+    "properties": {
+      "path": "/tools/elevenlabs",
+      "search": "",
+      "referrer": "tool_page",
+      "funnelStep": "affiliate_click",
+      "toolId": "elevenlabs",
+      "affiliateUrl": "https://elevenlabs.io/?from=creativai"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  }
+]

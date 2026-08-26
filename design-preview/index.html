@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StackWise — Design System & Interactive Preview</title>
+  <meta name="description" content="Official static preview of StackWise Creator AI Decision Platform design system. Responsive, accessible, Dark Mode enabled." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'monospace']
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+              950: '#1e1b4b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    .dark ::-webkit-scrollbar-thumb { background: #334155; }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200 antialiased min-h-screen">
+
+  <!-- STICKY HEADER -->
+  <header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-indigo-600 dark:bg-indigo-500 text-white flex items-center justify-center shadow-sm font-bold">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+        </div>
+        <div>
+          <span class="text-lg font-bold tracking-tight text-slate-900 dark:text-white">StackWise</span>
+          <span class="hidden sm:inline-block ml-2 text-[11px] font-semibold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/70 border border-indigo-200 dark:border-indigo-800/60 px-2 py-0.5 rounded-full">
+            Design Preview
+          </span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="#cards" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Tool Cards</a>
+        <a href="#stack-builder" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Stack Builder</a>
+        <a href="#workflow" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Workflows</a>
+        <a href="#comparison" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Comparisons</a>
+        <a href="#pace" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">P.A.C.E Model</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <!-- DARK MODE TOGGLE BUTTON -->
+        <button
+          id="theme-toggle"
+          class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition flex items-center justify-center"
+          aria-label="Toggle dark mode"
+          title="Toggle Dark Mode"
+        >
+          <svg id="theme-icon-sun" class="w-4 h-4 text-amber-400 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <svg id="theme-icon-moon" class="w-4 h-4 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+
+        <a
+          href="#stack-builder"
+          class="inline-flex items-center gap-1.5 bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-lg shadow-sm transition"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+          <span>Find My Stack</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 py-12">
+
+    <!-- 1. HERO SECTION -->
+    <section class="text-center space-y-6 pt-8 pb-4">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-900/60 shadow-xs">
+        <svg class="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        <span>Decision Product, Not an Ad Directory (§29)</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.12]">
+        Build the right <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400">AI Stack</span> for your content.
+      </h1>
+
+      <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+        Stop browsing thousands of random tools. StackWise evaluates AI software on real output quality, commercial licenses, and true per-video costs so you can publish with confidence.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-slate-500 dark:text-slate-400 pt-2">
+        <span class="inline-flex items-center gap-1.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-3 py-1.5 rounded-full shadow-xs">
+          <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          5 Official Verified Tools
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-3 py-1.5 rounded-full shadow-xs">
+          <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          P.A.C.E Benchmarked
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-3 py-1.5 rounded-full shadow-xs">
+          <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          Zero Sponsored Inflation
+        </span>
+      </div>
+    </section>
+
+    <!-- 2. INTERACTIVE STACK BUILDER (LIVE JS ENGINE) -->
+    <section id="stack-builder" class="bg-white dark:bg-slate-900 border-2 border-indigo-100 dark:border-indigo-900/60 rounded-2xl p-6 sm:p-8 shadow-sm space-y-8 transition-colors">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-6">
+        <div>
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-900/50 mb-2">
+            <svg class="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            <span>Interactive Decision Engine V1</span>
+          </div>
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-white tracking-tight">Build Your AI Creator Stack</h2>
+          <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Select constraints to dynamically update your verified production toolchain.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">1. Your Goal</label>
+          <select id="sb-goal" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-2.5 text-sm text-slate-800 dark:text-slate-100 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+            <option value="faceless">Faceless YouTube Video</option>
+            <option value="shorts">YouTube Shorts / TikTok</option>
+            <option value="longform">Long-form Video Essay</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">2. Monthly Budget</label>
+          <select id="sb-budget" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-2.5 text-sm text-slate-800 dark:text-slate-100 focus:ring-2 focus:ring-indigo-500 focus:outline-none font-mono">
+            <option value="0">$0/mo (Strictly Free)</option>
+            <option value="25">$25/mo (Starter)</option>
+            <option value="50" selected>$50/mo (Recommended)</option>
+            <option value="100">$100+/mo (Pro Volume)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">3. Experience Level</label>
+          <select id="sb-exp" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-2.5 text-sm text-slate-800 dark:text-slate-100 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+            <option value="beginner">Beginner (Zero Technical Skill)</option>
+            <option value="intermediate">Intermediate (Prompt Focused)</option>
+            <option value="advanced">Advanced (Volume Pipeline)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">4. Key Requirement</label>
+          <select id="sb-req" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-2.5 text-sm text-slate-800 dark:text-slate-100 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+            <option value="commercial" selected>Commercial Rights Guaranteed</option>
+            <option value="quality">Highest Output Quality</option>
+            <option value="cost">Lowest Possible Cost</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- RESULTS BOX -->
+      <div class="bg-gradient-to-br from-slate-900 via-slate-950 to-indigo-950 text-white rounded-xl p-6 sm:p-7 space-y-6 shadow-md border border-indigo-900/50">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-indigo-800/60 pb-5">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-indigo-300">Generated Stack Recommendation</span>
+            <h3 id="sb-stack-title" class="text-xl font-bold text-white mt-1">Faceless Creator Essential Suite</h3>
+          </div>
+          <div class="text-left sm:text-right bg-white/10 border border-white/10 rounded-lg px-4 py-2">
+            <div class="text-xs text-indigo-200 font-medium">Estimated Monthly Cost</div>
+            <div id="sb-total-cost" class="text-xl font-mono font-bold text-white">$17.00 – $37.00 / month</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white/10 border border-white/10 rounded-lg p-4 space-y-2">
+            <div class="text-[10px] font-mono uppercase text-indigo-300 font-bold">Step 1 — Script</div>
+            <div id="sb-step1-name" class="text-base font-bold text-white">Claude 3.5 Sonnet</div>
+            <div id="sb-step1-role" class="text-xs text-slate-300">High-Nuance Narrative Scripting</div>
+            <div id="sb-step1-cost" class="text-[11px] font-mono text-emerald-400 font-medium">$0–$20/mo</div>
+          </div>
+
+          <div class="bg-white/10 border border-white/10 rounded-lg p-4 space-y-2">
+            <div class="text-[10px] font-mono uppercase text-indigo-300 font-bold">Step 2 — Voice</div>
+            <div id="sb-step2-name" class="text-base font-bold text-white">ElevenLabs (Starter)</div>
+            <div id="sb-step2-role" class="text-xs text-slate-300">Ultra-Realistic Commercial Voiceover</div>
+            <div id="sb-step2-cost" class="text-[11px] font-mono text-emerald-400 font-medium">$5/mo</div>
+          </div>
+
+          <div class="bg-white/10 border border-white/10 rounded-lg p-4 space-y-2">
+            <div class="text-[10px] font-mono uppercase text-indigo-300 font-bold">Step 3 — Video</div>
+            <div id="sb-step3-name" class="text-base font-bold text-white">Runway (Standard)</div>
+            <div id="sb-step3-role" class="text-xs text-slate-300">Cinematic Gen-3 B-Roll & Visuals</div>
+            <div id="sb-step3-cost" class="text-[11px] font-mono text-emerald-400 font-medium">$12/mo</div>
+          </div>
+
+          <div class="bg-white/10 border border-white/10 rounded-lg p-4 space-y-2">
+            <div class="text-[10px] font-mono uppercase text-indigo-300 font-bold">Step 4 — Thumbnail</div>
+            <div id="sb-step4-name" class="text-base font-bold text-white">Canva AI</div>
+            <div id="sb-step4-role" class="text-xs text-slate-300">High-CTR YouTube Thumbnails</div>
+            <div id="sb-step4-cost" class="text-[11px] font-mono text-emerald-400 font-medium">$0–$15/mo</div>
+          </div>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-lg p-4 space-y-2">
+          <div class="text-xs font-semibold uppercase text-indigo-300 tracking-wider">Why this stack?</div>
+          <ul id="sb-reasons" class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-200">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Includes ElevenLabs Starter ($5) to guarantee full commercial monetization rights.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Claude selected for superior longform storytelling tone and 200k context window.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Runway Standard unlocks unwatermarked cinematic scene b-roll exports.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Canva AI provides 1-click subject background removal and YouTube thumbnail sizing.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. VERIFIED TOOL CARDS SHOWCASE -->
+    <section id="cards" class="space-y-6">
+      <div class="border-b border-slate-200 dark:border-slate-800 pb-4 flex items-end justify-between">
+        <div>
+          <div class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Section 4 — Component Library</div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Verified Tool Cards (5 Slice Tools)</h2>
+        </div>
+        <span class="text-xs text-slate-500 dark:text-slate-400">p-6 inner padding · flush grid</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1: ChatGPT -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-slate-300 dark:hover:border-slate-700 transition flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <span class="text-[11px] font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Script Writing</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">ChatGPT</h3>
+              </div>
+              <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60">
+                <svg class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Verified
+              </span>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed">
+              Conversational generative AI model used for rapid YouTube video outline generation, hook drafting, and script structuring.
+            </p>
+            <div class="space-y-1.5 w-full pt-1">
+              <div class="flex items-center justify-between text-xs mb-1">
+                <span class="font-semibold text-slate-700 dark:text-slate-300">P.A.C.E Rating</span>
+                <span class="font-mono font-bold text-slate-900 dark:text-white">8.6/10</span>
+              </div>
+              <div class="grid grid-cols-4 gap-1.5">
+                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded p-1.5 text-center">
+                  <div class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold">P</div>
+                  <div class="font-mono text-xs font-bold text-slate-900 dark:text-white">9.0</div>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded p-1.5 text-center">
+                  <div class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold">A</div>
+                  <div class="font-mono text-xs font-bold text-slate-900 dark:text-white">8.5</div>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded p-1.5 text-center">
+                  <div class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold">C</div>
+                  <div class="font-mono text-xs font-bold text-slate-900 dark:text-white">8.0</div>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded p-1.5 text-center">
+                  <div class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold">E</div>
+                  <div class="font-mono text-xs font-bold text-slate-900 dark:text-white">9.0</div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 text-xs space-y-1.5">
+              <div class="flex items-center justify-between"><span class="text-slate-500 dark:text-slate-400">Starting Price:</span><span class="font-mono font-semibold text-slate-900 dark:text-white">Free tier available</span></div>
+              <div class="flex items-center justify-between"><span class="text-slate-500 dark:text-slate-400">Commercial Use:</span><span class="text-emerald-700 dark:text-emerald-400 font-medium">✓ Allowed</span></div>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-semibold text-indigo-600 dark:text-indigo-400">
+            <span>Evaluation & Breakdown →</span>
+            <span class="text-slate-400 font-mono text-[11px]">openai.com</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Claude -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-slate-300 dark:hover:border-slate-700 transition flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <span class="text-[11px] font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Script Writing</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">Claude</h3>
+              </div>
+              <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60">
+                <svg class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Verified
+              </span>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed">
+              Advanced reasoning LLM by Anthropic, exceptional for longform storytelling, nuanced voice modulation, and artifact iteration.
+            </p>
+            <div class="space-y-1.5 w-full pt-1">
+              <div class="flex items-center justify-between text-xs mb-1">
+                <span class="font-semibold text-slate-700 dark:text-slate-300">P.A.C.E Rating</span>
+                <span class="font-mono font-bold text-slate-900 dark:text-white">8.8/10</span>
+              </div>
+              <div class="grid grid-cols-4 gap-1.5">
+                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded p-1.5 text-center"><div class="text-[10px] text-slate-500 uppercase font-semibold">P</div><div class="font-mono text-xs font-bold text-slate-900 dark:text-white">8.5</div></div>
+                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded p-1.5 text-center"><div class="text-[10px] text-slate-500 uppercase font-semibold">A</div><div class="font-mono text-xs font-bold text-slate-900 dark:text-white">9.5</div></div>
+                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded p-1.5 text-center"><div class="text-[10px] text-slate-500 uppercase font-semibold">C</div><div class="font-mono text-xs font-bold text-slate-900 dark:text-white">8.5</div></div>
+                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded p-1.5 text-center"><div class="text-[10px] text-slate-500 uppercase font-semibold">E</div><div class="font-mono text-xs font-bold text-slate-900 dark:text-white">8.5</div></div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 text-xs space-y-1.5">
+              <div class="flex items-center justify-between"><span class="text-slate-500 dark:text-slate-400">Starting Price:</span><span class="font-mono font-semibold text-slate-900 dark:text-white">Free tier available</span></div>
+              <div class="flex items-center justify-between"><span class="text-slate-500 dark:text-slate-400">Commercial Use:</span><span class="text-emerald-700 dark:text-emerald-400 font-medium">✓ Allowed</span></div>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-semibold text-indigo-600 dark:text-indigo-400">
+            <span>Evaluation & Breakdown →</span>
+            <span class="text-slate-400 font-mono text-[11px]">anthropic.com</span>
+          </div>
+        </div>
+
+        <!-- Card 3: ElevenLabs -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-slate-300 dark:hover:border-slate-700 transition flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <span class="text-[11px] font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Voice Audio</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">ElevenLabs</h3>
+              </div>
+              <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60">
+                <svg class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Verified
+              </span>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed">
+              Industry-leading AI voice generation and speech synthesis with human-level cadence, multilingual voices, and emotional modulation.
+            </p>
+            <div class="space-y-1.5 w-full pt-1">
+              <div class="flex items-center justify-between text-xs mb-1">
+                <span class="font-semibold text-slate-700 dark:text-slate-300">P.A.C.E Rating</span>
+                <span class="font-mono font-bold text-slate-900 dark:text-white">9.1/10</span>
+              </div>
+              <div class="grid grid-cols-4 gap-1.5">
+                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded p-1.5 text-center"><div class="text-[10px] text-slate-500 uppercase font-semibold">P</div><div class="font-mono text-xs font-bold text-slate-900 dark:text-white">8.5</div></div>
+                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded p-1.5 text-center"><div class="text-[10px] text-slate-500 uppercase font-semibold">A</div><div class="font-mono text-xs font-bold text-slate-900 dark:text-white">9.8</div></div>
+                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded p-1.5 text-center"><div class="text-[10px] text-slate-500 uppercase font-semibold">C</div><div class="font-mono text-xs font-bold text-slate-900 dark:text-white">9.0</div></div>
+                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded p-1.5 text-center"><div class="text-[10px] text-slate-500 uppercase font-semibold">E</div><div class="font-mono text-xs font-bold text-slate-900 dark:text-white">9.0</div></div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 text-xs space-y-1.5">
+              <div class="flex items-center justify-between"><span class="text-slate-500 dark:text-slate-400">Starting Price:</span><span class="font-mono font-semibold text-slate-900 dark:text-white">$5/month</span></div>
+              <div class="flex items-center justify-between"><span class="text-slate-500 dark:text-slate-400">Commercial Use:</span><span class="text-emerald-700 dark:text-emerald-400 font-medium">✓ Starter+ plan</span></div>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-semibold text-indigo-600 dark:text-indigo-400">
+            <span>Evaluation & Breakdown →</span>
+            <span class="text-slate-400 font-mono text-[11px]">elevenlabs.io</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. P.A.C.E MODEL SCORE CARD SHOWCASE -->
+    <section id="pace" class="space-y-6">
+      <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Section 6 — Benchmark Evaluation</div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">The P.A.C.E Evaluation Model</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- ElevenLabs PACE -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+            <div>
+              <h3 class="font-semibold text-slate-900 dark:text-white text-base">ElevenLabs Rating Breakdown</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">P.A.C.E Framework (0–10)</p>
+            </div>
+            <div class="text-right">
+              <div class="text-2xl font-bold font-mono text-indigo-600 dark:text-indigo-400">9.1</div>
+              <div class="text-[11px] text-slate-500 uppercase font-medium">Overall Benchmark</div>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs"><span class="font-medium text-slate-700 dark:text-slate-300"><strong>P</strong> — Price per Result</span><span class="font-mono font-bold text-slate-900 dark:text-white">8.5/10</span></div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-2 rounded-full bg-emerald-500" style="width: 85%"></div></div>
+              <p class="text-xs text-slate-600 dark:text-slate-400 pl-1">$5/mo Starter provides 30k characters (~30 mins audio), translating to ~$0.17/min.</p>
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs"><span class="font-medium text-slate-700 dark:text-slate-300"><strong>A</strong> — Output Accuracy</span><span class="font-mono font-bold text-slate-900 dark:text-white">9.8/10</span></div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-2 rounded-full bg-indigo-500" style="width: 98%"></div></div>
+              <p class="text-xs text-slate-600 dark:text-slate-400 pl-1">Best-in-class natural inflection, breathing cadence, and zero metallic robotic artifacts.</p>
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs"><span class="font-medium text-slate-700 dark:text-slate-300"><strong>C</strong> — Control & Flexibility</span><span class="font-mono font-bold text-slate-900 dark:text-white">9.0/10</span></div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-2 rounded-full bg-blue-500" style="width: 90%"></div></div>
+              <p class="text-xs text-slate-600 dark:text-slate-400 pl-1">Granular sliders for stability, clarity, style exaggeration, and instantaneous voice cloning.</p>
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs"><span class="font-medium text-slate-700 dark:text-slate-300"><strong>E</strong> — Ease of Use</span><span class="font-mono font-bold text-slate-900 dark:text-white">9.0/10</span></div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-2 rounded-full bg-violet-500" style="width: 90%"></div></div>
+              <p class="text-xs text-slate-600 dark:text-slate-400 pl-1">Zero learning curve text-to-speech with instant audio export and API support.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Runway PACE -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+            <div>
+              <h3 class="font-semibold text-slate-900 dark:text-white text-base">Runway Rating Breakdown</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">P.A.C.E Framework (0–10)</p>
+            </div>
+            <div class="text-right">
+              <div class="text-2xl font-bold font-mono text-indigo-600 dark:text-indigo-400">8.3</div>
+              <div class="text-[11px] text-slate-500 uppercase font-medium">Overall Benchmark</div>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs"><span class="font-medium text-slate-700 dark:text-slate-300"><strong>P</strong> — Price per Result</span><span class="font-mono font-bold text-slate-900 dark:text-white">7.5/10</span></div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-2 rounded-full bg-emerald-500" style="width: 75%"></div></div>
+              <p class="text-xs text-slate-600 dark:text-slate-400 pl-1">Standard tier ($12/mo) provides 625 credits (~125s of Gen-3 Alpha), translating to ~$0.58/5s clip.</p>
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs"><span class="font-medium text-slate-700 dark:text-slate-300"><strong>A</strong> — Output Accuracy</span><span class="font-mono font-bold text-slate-900 dark:text-white">9.2/10</span></div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-2 rounded-full bg-indigo-500" style="width: 92%"></div></div>
+              <p class="text-xs text-slate-600 dark:text-slate-400 pl-1">Gen-3 Alpha produces photorealistic cinematic motion, fluid lighting, and fine physics.</p>
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs"><span class="font-medium text-slate-700 dark:text-slate-300"><strong>C</strong> — Control & Flexibility</span><span class="font-mono font-bold text-slate-900 dark:text-white">8.5/10</span></div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-2 rounded-full bg-blue-500" style="width: 85%"></div></div>
+              <p class="text-xs text-slate-600 dark:text-slate-400 pl-1">Motion Brush, camera control trajectories, and keyframe image-to-video steering.</p>
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs"><span class="font-medium text-slate-700 dark:text-slate-300"><strong>E</strong> — Ease of Use</span><span class="font-mono font-bold text-slate-900 dark:text-white">8.0/10</span></div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-2 rounded-full bg-violet-500" style="width: 80%"></div></div>
+              <p class="text-xs text-slate-600 dark:text-slate-400 pl-1">Fast web UI, but credit monitoring and prompt nuance require basic creator familiarity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WORKFLOW & TRUE COST BLUEPRINT -->
+    <section id="workflow" class="space-y-6">
+      <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Section 8 — End-to-End Blueprint</div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Faceless YouTube Workflow Pipeline</h2>
+      </div>
+
+      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 sm:p-7 shadow-sm space-y-5">
+        <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+          <div>
+            <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800/60">
+              <svg class="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              Recommended Stack
+            </span>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-2">Faceless YouTube Automation Stack</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">Produce monetizable, high-retention faceless documentary YouTube videos from concept to published thumbnail.</p>
+          </div>
+          <div class="text-left sm:text-right bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-100 dark:border-indigo-900/60 rounded-lg px-3.5 py-2 shrink-0">
+            <div class="text-xs text-indigo-600 dark:text-indigo-400 font-medium">Estimated Stack</div>
+            <div class="text-base font-bold font-mono text-indigo-900 dark:text-white">$17.00 – $37.00 / mo</div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 rounded-lg p-4 space-y-2.5">
+          <div class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Workflow Chain (4 Sequential Steps)</div>
+          <div class="grid grid-cols-1 sm:grid-cols-4 gap-2.5">
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded p-2.5 text-xs">
+              <div class="text-[10px] font-mono text-indigo-600 dark:text-indigo-400 font-bold">Step 1</div>
+              <div class="font-semibold text-slate-800 dark:text-slate-200 truncate mt-0.5">Script & Hook</div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">ChatGPT / Claude</div>
+            </div>
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded p-2.5 text-xs">
+              <div class="text-[10px] font-mono text-indigo-600 dark:text-indigo-400 font-bold">Step 2</div>
+              <div class="font-semibold text-slate-800 dark:text-slate-200 truncate mt-0.5">Voiceover Audio</div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">ElevenLabs</div>
+            </div>
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded p-2.5 text-xs">
+              <div class="text-[10px] font-mono text-indigo-600 dark:text-indigo-400 font-bold">Step 3</div>
+              <div class="font-semibold text-slate-800 dark:text-slate-200 truncate mt-0.5">B-Roll Video</div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">Runway Gen-3</div>
+            </div>
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded p-2.5 text-xs">
+              <div class="text-[10px] font-mono text-indigo-600 dark:text-indigo-400 font-bold">Step 4</div>
+              <div class="font-semibold text-slate-800 dark:text-slate-200 truncate mt-0.5">Thumbnail Asset</div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">Canva AI</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+          <!-- True Cost Panel -->
+          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 space-y-3">
+            <div class="flex items-center gap-2 border-b border-slate-100 dark:border-slate-800 pb-2">
+              <svg class="w-4 h-4 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+              <h4 class="font-semibold text-slate-900 dark:text-white text-xs uppercase tracking-wider">True Cost Analysis</h4>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-center">
+              <div class="bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 rounded-lg p-3">
+                <div class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold">Starter (4 vids/mo)</div>
+                <div class="text-xl font-mono font-bold text-slate-900 dark:text-white mt-1">$4.25</div>
+                <div class="text-[10px] text-slate-500 dark:text-slate-400">per finished video</div>
+              </div>
+              <div class="bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 rounded-lg p-3">
+                <div class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold">Volume (20 vids/mo)</div>
+                <div class="text-xl font-mono font-bold text-slate-900 dark:text-white mt-1">$2.85</div>
+                <div class="text-[10px] text-slate-500 dark:text-slate-400">per finished video</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commercial Rights Compliance -->
+          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 space-y-2.5">
+            <div class="flex items-center gap-2 border-b border-slate-100 dark:border-slate-800 pb-2">
+              <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              <h4 class="font-semibold text-slate-900 dark:text-white text-xs uppercase tracking-wider">Commercial Compliance Guarantee</h4>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              Full monetization eligibility across YouTube Partner Program. Requires ElevenLabs Starter ($5/mo) to eliminate attribution requirements and Runway Standard ($12/mo) for unwatermarked clips.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. COMPARISON MATRIX & DECISION VERDICT -->
+    <section id="comparison" class="space-y-6">
+      <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Section 10 — Decision Instrument</div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">ChatGPT vs Claude Head-to-Head</h2>
+      </div>
+
+      <div class="bg-gradient-to-br from-indigo-50/90 via-white to-indigo-50/40 dark:from-indigo-950/60 dark:via-slate-900 dark:to-indigo-950/30 border-2 border-indigo-200 dark:border-indigo-900/80 rounded-xl p-6 sm:p-7 shadow-sm space-y-5">
+        <div class="flex items-center gap-2 text-indigo-800 dark:text-indigo-300">
+          <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+          <span class="text-xs font-bold uppercase tracking-wider">Our Decision Verdict</span>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+            Primary Recommendation: <span class="text-indigo-600 dark:text-indigo-400">Claude 3.5 Sonnet</span>
+          </h3>
+          <p class="text-sm text-slate-700 dark:text-slate-300 mt-1.5 leading-relaxed">
+            Claude 3.5 Sonnet delivers noticeably more natural, human-sounding narrative scripts for video essays and documentary-style YouTube channels, avoiding typical generic AI tropes.
+          </p>
+        </div>
+
+        <div class="bg-white dark:bg-slate-900 border border-indigo-100 dark:border-indigo-900/60 rounded-lg p-5 space-y-2.5">
+          <h4 class="text-xs font-semibold text-slate-900 dark:text-white uppercase tracking-wider">Recommended Because:</h4>
+          <ul class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Substantially superior longform prose quality with authentic creator voice matching.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Artifacts feature enables side-by-side video timeline script revision.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>200k token context window supports ingestion of full books, research papers, and podcast transcripts.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-start gap-2 text-xs text-slate-600 dark:text-slate-300 bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/60 rounded-lg p-3.5">
+          <svg class="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+          <span><strong>Situational Rule:</strong> Choose ChatGPT if you rely heavily on Custom GPTs, integrated DALL-E image generation, or advanced voice interaction.</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 dark:bg-slate-950 text-slate-400 border-t border-slate-800 text-sm mt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="space-y-3 md:col-span-1">
+          <div class="flex items-center gap-2 text-white">
+            <div class="w-7 h-7 rounded-md bg-indigo-500 flex items-center justify-center font-bold">⬢</div>
+            <span class="font-bold text-base tracking-tight">StackWise</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            We optimize for decisions, not page views. Finding the right AI stack for your budget, workflow, and content goals.
+          </p>
+          <div class="flex items-center gap-1.5 text-xs text-emerald-400 font-medium">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            <span>Official Verification Guaranteed</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-3">Verified Slices</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#cards" class="hover:text-white transition">Script & Writing (ChatGPT, Claude)</a></li>
+            <li><a href="#cards" class="hover:text-white transition">Voice & Audio (ElevenLabs)</a></li>
+            <li><a href="#cards" class="hover:text-white transition">Generative Video (Runway)</a></li>
+            <li><a href="#cards" class="hover:text-white transition">Thumbnails (Canva AI)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-3">Decision Blueprints</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#workflow" class="hover:text-white transition">Faceless YouTube Stack</a></li>
+            <li><a href="#comparison" class="hover:text-white transition">ChatGPT vs Claude</a></li>
+            <li><a href="#stack-builder" class="hover:text-white transition">Rules-Based Stack Builder</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-3">Trust Standards</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#pace" class="hover:text-white transition">P.A.C.E 4-Pillar Evaluation</a></li>
+            <li><a href="#" class="hover:text-white transition">Official Verification Policy</a></li>
+            <li><a href="#" class="hover:text-white transition">Zero Sponsored Bias</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>© 2026 StackWise. Built strictly for content creators. Design preview visual reference.</p>
+        <div class="flex items-center gap-2">
+          <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <span>Dataset last verified: August 2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CLIENT SCRIPTS (DARK MODE & STACK BUILDER) -->
+  <script>
+    // Theme Toggle Script
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const sunIcon = document.getElementById('theme-icon-sun');
+    const moonIcon = document.getElementById('theme-icon-moon');
+
+    function applyTheme(isDark) {
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    const savedTheme = localStorage.getItem('theme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+      applyTheme(true);
+    } else {
+      applyTheme(false);
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      applyTheme(!isDark);
+    });
+
+    // Interactive Stack Builder
+    const budgetSelect = document.getElementById('sb-budget');
+    const reqSelect = document.getElementById('sb-req');
+
+    function updateStack() {
+      const budget = budgetSelect.value;
+      const req = reqSelect.value;
+
+      const isZero = budget === '0';
+      const isHighQuality = req === 'quality';
+
+      const totalCostEl = document.getElementById('sb-total-cost');
+      const step1Name = document.getElementById('sb-step1-name');
+      const step1Cost = document.getElementById('sb-step1-cost');
+      const step2Name = document.getElementById('sb-step2-name');
+      const step2Cost = document.getElementById('sb-step2-cost');
+      const step3Name = document.getElementById('sb-step3-name');
+      const step3Cost = document.getElementById('sb-step3-cost');
+      const reasonsEl = document.getElementById('sb-reasons');
+
+      if (isZero) {
+        totalCostEl.textContent = '$0.00 / month';
+        step1Name.textContent = 'ChatGPT / Claude (Free)';
+        step1Cost.textContent = '$0/mo';
+        step2Name.textContent = 'ElevenLabs (Free)';
+        step2Cost.textContent = '$0/mo';
+        step3Name.textContent = 'Runway (Trial 125 credits)';
+        step3Cost.textContent = '$0/mo';
+      } else if (budget === '25') {
+        totalCostEl.textContent = '$17.00 / month';
+        step1Name.textContent = isHighQuality ? 'Claude 3.5 Sonnet' : 'ChatGPT';
+        step1Cost.textContent = '$0–$20/mo';
+        step2Name.textContent = 'ElevenLabs (Starter)';
+        step2Cost.textContent = '$5/mo';
+        step3Name.textContent = 'Runway (Standard)';
+        step3Cost.textContent = '$12/mo';
+      } else {
+        totalCostEl.textContent = '$17.00 – $37.00 / month';
+        step1Name.textContent = isHighQuality ? 'Claude 3.5 Sonnet' : 'ChatGPT';
+        step1Cost.textContent = isHighQuality ? '$20/mo' : '$0–$20/mo';
+        step2Name.textContent = 'ElevenLabs (Starter)';
+        step2Cost.textContent = '$5/mo';
+        step3Name.textContent = 'Runway (Standard)';
+        step3Cost.textContent = '$12/mo';
+      }
+
+      reasonsEl.innerHTML = `
+        <li class="flex items-start gap-2">
+          <svg class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <span>${isZero ? 'Configured for zero upfront investment using free tiers and trial credits.' : 'Includes ElevenLabs Starter ($5) to guarantee full commercial monetization rights.'}</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <svg class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <span>${isHighQuality ? 'Claude selected for superior longform storytelling tone and 200k context window.' : 'ChatGPT selected for rapid hook ideation and flexible outline drafting.'}</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <svg class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <span>Runway Standard unlocks unwatermarked cinematic scene b-roll exports.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <svg class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <span>Canva AI provides 1-click subject background removal and YouTube thumbnail sizing.</span>
+        </li>
+      `;
+    }
+
+    budgetSelect.addEventListener('change', updateStack);
+    reqSelect.addEventListener('change', updateStack);
+  </script>
+</body>
+</html>
