@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://creativai.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://getcreativai.vercel.app';
   const now = new Date().toISOString();
 
   const dataDir = path.join(process.cwd(), 'data');

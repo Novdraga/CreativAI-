@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://creativai.vercel.app/sitemap.xml
+Sitemap: https://getcreativai.vercel.app/sitemap.xml

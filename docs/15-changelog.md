@@ -25,6 +25,15 @@
 
 ## Changelog
 
+## [2026-08-27] — PMO-029
+- Category: SEO_INTEGRATION
+- Summary: Integrated Google Search Console verification and synchronized production domain URLs:
+  1. Added `verification: { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '...' }` to root metadata in `src/app/layout.tsx`.
+  2. Updated canonical base URL in `src/app/layout.tsx`, `public/robots.txt`, and `src/app/sitemap.ts` to `https://getcreativai.vercel.app`.
+  3. Validated that `/robots.txt` and `/sitemap.xml` correctly expose search directives and all 65 production URLs.
+- Files: `src/app/layout.tsx`, `public/robots.txt`, `src/app/sitemap.ts`, `docs/15-changelog.md`
+- Notes/Risks: Zero build errors. GSC meta tag ready for verification.
+
 ## [2026-08-27] — PMO-028
 - Category: UI/UX_REDESIGN
 - Summary: Redesigned tool and inner detail page hero headers to eliminate navbar logo and breadcrumb collisions:

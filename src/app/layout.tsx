@@ -22,7 +22,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://creativai.vercel.app'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://getcreativai.vercel.app'),
   title: {
     default: 'CreativAI — AI Decision Engine for Creators',
     template: '%s | CreativAI',
@@ -43,10 +43,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || process.env.GOOGLE_SITE_VERIFICATION || 'google-site-verification-getcreativai',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://creativai.vercel.app',
+    url: 'https://getcreativai.vercel.app',
     siteName: 'CreativAI',
     title: 'CreativAI — AI Decision Engine for Creators',
     description: 'Evidence-backed decision engine helping creators choose the right AI tools, build integrated workflows, and calculate true production costs.',
