@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || process.env.GOOGLE_SITE_VERIFICATION || 'google-site-verification-getcreativai',
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || process.env.GOOGLE_SITE_VERIFICATION || 'google8f4ba00c9da6c50b',
   },
   openGraph: {
     type: 'website',
