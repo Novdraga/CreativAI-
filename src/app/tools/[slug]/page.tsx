@@ -13,7 +13,7 @@ import { Breadcrumbs } from '../../../components/Breadcrumbs';
 import { EvidenceBlock } from '../../../components/EvidenceBlock';
 import { AffiliateButton } from '../../../components/AffiliateButton';
 import { Card3D } from '../../../components/creativai/card-3d';
-import { LeaderboardAd, InContentAd, HeroCornerAd } from '../../../components/creativai/ad-slot';
+import { LeaderboardAd } from '../../../components/creativai/ad-slot';
 import {
   ExternalLink,
   Check,
@@ -153,8 +153,8 @@ export default function ToolDetailPage({ params }: ToolPageProps) {
               </div>
             </div>
 
-            {/* Overall Score Pill & Corner Ad */}
-            <div className="lg:col-span-4 flex flex-col items-center lg:items-end gap-6">
+            {/* Overall Score Pill */}
+            <div className="lg:col-span-4 flex flex-col items-center lg:items-end">
               <div className="w-full max-w-[320px] p-6 rounded-2xl glass-card text-center space-y-2">
                 <span className="text-[11px] font-bold uppercase tracking-widest text-ink/50 dark:text-white/50">
                   Overall PACE Score
@@ -166,10 +166,6 @@ export default function ToolDetailPage({ params }: ToolPageProps) {
                 <p className="text-xs text-ink/60 dark:text-white/60">
                   Calculated from 4 weighted creator criteria
                 </p>
-              </div>
-
-              <div className="hidden lg:block">
-                <HeroCornerAd sponsor="Verified Production Partner" />
               </div>
             </div>
           </div>
@@ -255,6 +251,11 @@ export default function ToolDetailPage({ params }: ToolPageProps) {
             ))}
           </div>
         </section>
+
+        {/* Horizontal Leaderboard Ad (728x90) - Non-intrusive safe placement */}
+        <div className="flex justify-center my-6 w-full">
+          <LeaderboardAd sponsor="Featured Creator Hardware & Cloud Engine" />
+        </div>
 
         {/* 2. Verified Pricing Plans */}
         <section className="space-y-6">

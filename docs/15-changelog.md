@@ -25,6 +25,14 @@
 
 ## Changelog
 
+## [2026-08-27] — PMO-027
+- Category: UI/UX_FIXES
+- Summary: Resolved UI ad overlap on tool detail pages and extracted marquee visibility logic:
+  1. Extracted `<Marquee />` into a client component with route-aware conditional rendering (`usePathname()`) so the top animated marquee strip strictly appears on the Homepage (`/`) and remains hidden across all inner detail pages (`/tools/[slug]`, `/compare/[slug]`, `/workflows/[slug]`, etc.).
+  2. Removed `HeroCornerAd` from the hero score pill on `/tools/[slug]` to eliminate viewport crowding and layout overlap. Replaced with a centered, horizontal 728x90 `LeaderboardAd` in a dedicated section between P.A.C.E Scorecard Breakdown and Official Pricing.
+- Files: `src/components/Marquee.tsx`, `src/app/page.tsx`, `src/app/tools/[slug]/page.tsx`, `docs/15-changelog.md`
+- Notes/Risks: Zero TypeScript or layout errors. Verified on production build.
+
 ## [2026-08-26] — PMO-025-HOTFIX
 - Category: FIX & UI/UX
 - Summary: Resolved dark mode persistence and upgraded Stack Builder to interactive step wizard:
