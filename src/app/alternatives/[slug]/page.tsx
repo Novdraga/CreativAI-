@@ -3,9 +3,8 @@ import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getAllAlternatives, getAlternativeBySlug, getToolById } from '../../../lib/data';
-import { Breadcrumbs } from '../../../components/Breadcrumbs';
 import { LeaderboardAd, InContentAd } from '@/components/creativai/ad-slot';
-import { RefreshCw, ShieldCheck, ArrowRight, ArrowUpRight, Check, X, AlertTriangle } from 'lucide-react';
+import { RefreshCw, ShieldCheck, ArrowRight, ArrowLeft, ArrowUpRight, Check, X, AlertTriangle } from 'lucide-react';
 
 interface AlternativePageProps {
   params: {
@@ -48,14 +47,17 @@ export default function AlternativeDetailPage({ params }: AlternativePageProps) 
   return (
     <div className="min-h-screen bg-background text-foreground pb-20">
       {/* Header */}
-      <section className="relative pt-8 pb-12 border-b border-black/5 dark:border-white/5 bg-paper-warm/40 dark:bg-white/[0.02]">
+      <section className="relative pt-28 sm:pt-32 pb-12 sm:pb-16 border-b border-black/5 dark:border-white/5 bg-paper-warm/40 dark:bg-white/[0.02]">
         <div className="mx-auto max-w-[1320px] px-5 sm:px-8 space-y-6">
-          <Breadcrumbs
-            items={[
-              { label: 'Alternatives', href: '/alternatives' },
-              { label: alternative.title },
-            ]}
-          />
+          <div>
+            <Link
+              href="/alternatives"
+              className="inline-flex items-center gap-1.5 text-xs font-medium text-ink/50 hover:text-ink dark:text-white/50 dark:hover:text-white transition group"
+            >
+              <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
+              <span>Back to All Alternatives</span>
+            </Link>
+          </div>
 
           <div className="space-y-4 max-w-3xl">
             <div className="flex items-center gap-2">

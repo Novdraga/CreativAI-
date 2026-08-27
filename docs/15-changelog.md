@@ -25,6 +25,15 @@
 
 ## Changelog
 
+## [2026-08-27] — PMO-028
+- Category: UI/UX_REDESIGN
+- Summary: Redesigned tool and inner detail page hero headers to eliminate navbar logo and breadcrumb collisions:
+  1. Increased top spacing on all inner detail pages (`/tools/[slug]`, `/workflows/[slug]`, `/compare/[slug]`, `/alternatives/[slug]`) to `pt-28 sm:pt-32 pb-12 sm:pb-16`, providing generous clearance below the fixed top navbar.
+  2. Removed cluttered breadcrumbs and replaced with a clean, modern back link (`Back to Tools Catalog`, `Back to All Workflows`, etc.).
+  3. Redesigned the "Overall PACE Score" block on `/tools/[slug]` into a premium Bento scorecard with audited badge, gold gradient rating (`X.X / 10`), tier evaluation label, and 4-pillar mini-score breakdown grid (P, A, C, E).
+- Files: `src/app/tools/[slug]/page.tsx`, `src/app/workflows/[slug]/page.tsx`, `src/app/compare/[slug]/page.tsx`, `src/app/alternatives/[slug]/page.tsx`, `docs/15-changelog.md`
+- Notes/Risks: 65 static routes compiled cleanly. Verified across all tools, comparisons, and workflows.
+
 ## [2026-08-27] — PMO-027
 - Category: UI/UX_FIXES
 - Summary: Resolved UI ad overlap on tool detail pages and extracted marquee visibility logic:

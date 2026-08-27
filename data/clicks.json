@@ -70,5 +70,21 @@
     "affiliateUrl": "https://elevenlabs.io",
     "referrer": "test_suite",
     "userAgent": "unknown"
+  },
+  {
+    "id": "clk-1787794613474-rvv9x",
+    "timestamp": "2026-08-27T01:36:53.474Z",
+    "toolId": "decision-session:faceless-youtube",
+    "affiliateUrl": "stack-result:chatgpt,elevenlabs,capcut,canva-ai",
+    "referrer": "/find-my-stack",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "clk-1787794662589-svsv7",
+    "timestamp": "2026-08-27T01:37:42.589Z",
+    "toolId": "decision-session:faceless-youtube",
+    "affiliateUrl": "stack-result:claude,elevenlabs,davinci-resolve,midjourney",
+    "referrer": "/stack",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
   }
 ]

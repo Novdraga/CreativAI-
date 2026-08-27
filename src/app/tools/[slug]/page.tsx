@@ -9,7 +9,6 @@ import {
   getWorkflowsForTool,
   getAlternativesForTool
 } from '../../../lib/data';
-import { Breadcrumbs } from '../../../components/Breadcrumbs';
 import { EvidenceBlock } from '../../../components/EvidenceBlock';
 import { AffiliateButton } from '../../../components/AffiliateButton';
 import { Card3D } from '../../../components/creativai/card-3d';
@@ -20,6 +19,7 @@ import {
   X,
   ShieldCheck,
   ArrowRight,
+  ArrowLeft,
   Sparkles,
   DollarSign,
   Award,
@@ -108,37 +108,45 @@ export default function ToolDetailPage({ params }: ToolPageProps) {
       />
 
       {/* Hero Section */}
-      <section className="relative pt-8 pb-12 border-b border-black/5 dark:border-white/5 bg-paper-warm/40 dark:bg-white/[0.02]">
+      <section className="relative pt-28 sm:pt-32 pb-12 sm:pb-16 border-b border-black/5 dark:border-white/5 bg-paper-warm/40 dark:bg-white/[0.02]">
         <div className="mx-auto max-w-[1320px] px-5 sm:px-8 space-y-6">
-          <Breadcrumbs
-            items={[
-              { label: 'Tools Catalog', href: '/tools' },
-              { label: tool.name },
-            ]}
-          />
+          {/* Clean Back Link */}
+          <div>
+            <Link
+              href="/tools"
+              className="inline-flex items-center gap-1.5 text-xs font-medium text-ink/50 hover:text-ink dark:text-white/50 dark:hover:text-white transition group"
+            >
+              <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
+              <span>Back to Tools Catalog</span>
+            </Link>
+          </div>
 
-          <div className="grid lg:grid-cols-12 gap-8 items-start">
-            <div className="lg:col-span-8 space-y-4">
-              <div className="flex flex-wrap items-center gap-3">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left Column: Category, Verification, Title, Description, Action CTAs */}
+            <div className="lg:col-span-7 space-y-5">
+              <div className="flex flex-wrap items-center gap-2.5">
                 <span className="text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-violet-500/10 text-violet-700 dark:text-violet-300 border border-violet-500/20">
                   {tool.category.replace('-', ' ')}
                 </span>
-                <div className="flex items-center gap-1 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
+                <div className="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
                   <ShieldCheck className="w-3.5 h-3.5" />
                   <span>100% Independently Verified</span>
                 </div>
+                <span className="text-[11px] font-medium text-ink/40 dark:text-white/40">
+                  Updated {tool.last_verified}
+                </span>
               </div>
 
-              <h1 className="font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-ink dark:text-white">
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-ink dark:text-white leading-[1.08]">
                 {tool.name}
               </h1>
 
-              <p className="text-base sm:text-lg text-ink/70 dark:text-white/70 leading-relaxed max-w-2xl font-normal">
+              <p className="text-base sm:text-lg text-ink/75 dark:text-white/75 leading-relaxed max-w-2xl font-normal">
                 {tool.description}
               </p>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-4 pt-2">
+              <div className="flex flex-wrap items-center gap-3.5 pt-2">
                 <AffiliateButton
                   tool={tool}
                   className="btn-shine inline-flex items-center gap-2 rounded-xl bg-ink px-6 py-3 text-sm font-semibold text-paper shadow-md hover:bg-ink-soft transition dark:bg-paper dark:text-ink"
@@ -153,18 +161,58 @@ export default function ToolDetailPage({ params }: ToolPageProps) {
               </div>
             </div>
 
-            {/* Overall Score Pill */}
-            <div className="lg:col-span-4 flex flex-col items-center lg:items-end">
-              <div className="w-full max-w-[320px] p-6 rounded-2xl glass-card text-center space-y-2">
-                <span className="text-[11px] font-bold uppercase tracking-widest text-ink/50 dark:text-white/50">
-                  Overall PACE Score
-                </span>
-                <div className="font-display text-5xl font-extrabold text-gradient-amber">
-                  {paceAverage}
-                  <span className="text-xl text-ink/40 dark:text-white/40 font-normal">/10</span>
+            {/* Right Column: Redesigned Overall PACE Score Bento Card */}
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="w-full max-w-[380px] p-6 sm:p-7 rounded-3xl glass-card border border-black/10 dark:border-white/10 shadow-lg space-y-5 bg-white/60 dark:bg-white/[0.04]">
+                <div className="flex items-center justify-between border-b border-black/5 dark:border-white/10 pb-3.5">
+                  <div className="flex items-center gap-2">
+                    <Award className="w-4 h-4 text-amber-500" />
+                    <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-ink/60 dark:text-white/60">
+                      Overall PACE Score
+                    </span>
+                  </div>
+                  <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/20">
+                    Audited
+                  </span>
                 </div>
-                <p className="text-xs text-ink/60 dark:text-white/60">
-                  Calculated from 4 weighted creator criteria
+
+                <div className="flex items-baseline justify-between">
+                  <div className="space-y-0.5">
+                    <div className="font-display text-5xl sm:text-6xl font-extrabold tracking-tight text-gradient-amber leading-none">
+                      {paceAverage}
+                      <span className="text-xl sm:text-2xl text-ink/40 dark:text-white/40 font-normal ml-1">/10</span>
+                    </div>
+                    <span className="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
+                      {Number(paceAverage) >= 8.5 ? 'Production Grade · Top Tier' : 'Standard Creator Rating'}
+                    </span>
+                  </div>
+                  <div className="text-right text-[11px] text-ink/50 dark:text-white/50 max-w-[120px] leading-tight">
+                    4 weighted criteria
+                  </div>
+                </div>
+
+                {/* 4-Pillar Score Summary Strip */}
+                <div className="grid grid-cols-4 gap-2 pt-2 border-t border-black/5 dark:border-white/10">
+                  <div className="text-center p-2 rounded-xl bg-black/[0.02] dark:bg-white/[0.02]">
+                    <div className="text-[10px] font-bold text-amber-600 dark:text-amber-400">P</div>
+                    <div className="font-display text-sm font-bold text-ink dark:text-white">{tool.pace_scores.P}</div>
+                  </div>
+                  <div className="text-center p-2 rounded-xl bg-black/[0.02] dark:bg-white/[0.02]">
+                    <div className="text-[10px] font-bold text-violet-600 dark:text-violet-400">A</div>
+                    <div className="font-display text-sm font-bold text-ink dark:text-white">{tool.pace_scores.A}</div>
+                  </div>
+                  <div className="text-center p-2 rounded-xl bg-black/[0.02] dark:bg-white/[0.02]">
+                    <div className="text-[10px] font-bold text-teal-600 dark:text-teal-400">C</div>
+                    <div className="font-display text-sm font-bold text-ink dark:text-white">{tool.pace_scores.C}</div>
+                  </div>
+                  <div className="text-center p-2 rounded-xl bg-black/[0.02] dark:bg-white/[0.02]">
+                    <div className="text-[10px] font-bold text-fuchsia-600 dark:text-fuchsia-400">E</div>
+                    <div className="font-display text-sm font-bold text-ink dark:text-white">{tool.pace_scores.E}</div>
+                  </div>
+                </div>
+
+                <p className="text-[11px] text-ink/60 dark:text-white/60 leading-relaxed text-center">
+                  Production-Ready · Authentic Terms · Cost-per-Video · Editorial Quality
                 </p>
               </div>
             </div>

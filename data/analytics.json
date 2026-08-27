@@ -858,5 +858,105 @@
       "affiliateUrl": "https://elevenlabs.io/?from=creativai"
     },
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0"
+  },
+  {
+    "id": "evt-1787794596472-4r4l5",
+    "timestamp": "2026-08-27T01:36:36.472Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "evt-1787794607838-mcpib",
+    "timestamp": "2026-08-27T01:36:47.838Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/find-my-stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "evt-1787794613481-acgx9",
+    "timestamp": "2026-08-27T01:36:53.481Z",
+    "eventName": "funnel_result_view",
+    "properties": {
+      "path": "/find-my-stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "result_view",
+      "goal": "faceless-youtube",
+      "budget": "0",
+      "tools": [
+        "chatgpt",
+        "elevenlabs",
+        "capcut",
+        "canva-ai"
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "evt-1787794641567-0k37v",
+    "timestamp": "2026-08-27T01:37:21.567Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "evt-1787794655414-97sde",
+    "timestamp": "2026-08-27T01:37:35.414Z",
+    "eventName": "funnel_stack_click",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "stack_click"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "evt-1787794662598-of8o8",
+    "timestamp": "2026-08-27T01:37:42.598Z",
+    "eventName": "funnel_result_view",
+    "properties": {
+      "path": "/stack",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "result_view",
+      "goal": "faceless-youtube",
+      "budget": "25",
+      "tools": [
+        "claude",
+        "elevenlabs",
+        "davinci-resolve",
+        "midjourney"
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "evt-1787794705443-g0pwm",
+    "timestamp": "2026-08-27T01:38:25.443Z",
+    "eventName": "funnel_home_visit",
+    "properties": {
+      "path": "/",
+      "search": "",
+      "referrer": "direct",
+      "funnelStep": "home_visit"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
   }
 ]
